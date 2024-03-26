@@ -1,0 +1,91 @@
+nav{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 60%;
+}
+nav ul li{
+    margin-right: 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: rgb(249, 5, 5);
+}
+.buttons{
+    background-color: #333;
+}
+.buttons button{
+    background-color: #333;
+    color: rgb(249, 5, 5);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;  
+}
+/* Submenu initially hidden */
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+}
+/* Navbar.css */
+
+/* Submenu arrow for "Services" menu item */
+nav ul > li:nth-child(2) > a::after {
+    content: ' ▼'; /* Unicode character for downward arrow */
+    margin-left: 5px; /* Adjust spacing */
+  }
+  
+  /* Hide arrow for items in the submenu */
+  nav ul > li:nth-child(2) > ul > li > a::after {
+    content: none;
+  }
+  
+/* Submenu visible on hover */
+nav ul li:hover .submenu{
+    display: block;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.submenu ul li{
+    margin-right: 0;
+}
+.submenu ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+@media (max-width:1200px){
+    nav ul li{
+        font-size: 0.9rem;
+    }
+    nav ul{
+        width: 55%;
+    }
+    .buttons button{
+        font-size: 0.9rem;
+    }
+    .buttons{
+        left: 93%;
+    }
+}
