@@ -1,7 +1,7 @@
 "use client";
 
 // Navbar.js
-import React from 'react';
+import React,{useState}  from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import '../../../i18n/i18n';
@@ -9,6 +9,7 @@ import '../styles/navbar.css';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const [submenuVisible, setSubmenuVisible] = useState(false);
 
   const switchToFrench = () => {
     i18n.changeLanguage('fr');
@@ -16,6 +17,9 @@ const Navbar = () => {
 
   const switchToDutch = () => {
     i18n.changeLanguage('nl');
+  };
+  const toggleSubmenu = () => {
+    setSubmenuVisible(!submenuVisible);
   };
 
   return (
@@ -27,11 +31,9 @@ const Navbar = () => {
             {t('home')}
           </Link>
         </li>
-        <li>
-          <Link href="/services">
-            {t('services')}
-          </Link>
-          <ul className="submenu"> {/* Corrected submenu */}
+        <li onClick={toggleSubmenu}>
+          <span>{t('services')}</span>
+          <ul className={`submenu ${submenuVisible ? 'visible' : ''}`}>
             <li>
               <Link href="/services/pneus">
                 {t('pneus')}

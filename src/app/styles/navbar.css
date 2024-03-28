@@ -17,6 +17,7 @@ nav ul{
 }
 nav ul li{
     margin-right: 10px;
+    padding: 20px;
 }
 nav ul li a{
     color: white;
@@ -37,25 +38,35 @@ nav ul li a:hover{
     font-size: 1rem;  
 }
 /* Submenu initially hidden */
-.submenu{
-    display: none;
+.submenu {
+    display: none; /* Initially hidden */
     position: absolute;
     background-color: #333;
-    width: 100%;
+    width: 10%;
     z-index: 1;
-}
+    padding: 20px;
+    transition: opacity 0.3s ease; /* Add transition property */
+    opacity: 0; /* Initially fully transparent */
+  }
+  .submenu.visible {
+    display: block;
+    opacity: 1; /* Make it fully opaque when visible */
+  }
+  
+  /* Keep the rest of your existing CSS */
+  
 /* Navbar.css */
 
 /* Submenu arrow for "Services" menu item */
-nav ul > li:nth-child(2) > a::after {
+nav ul > li span::after {
     content: ' ▼'; /* Unicode character for downward arrow */
     margin-left: 5px; /* Adjust spacing */
   }
-  
-  /* Hide arrow for items in the submenu */
-  nav ul > li:nth-child(2) > ul > li > a::after {
-    content: none;
+
+  nav ul > li span{
+    cursor: pointer;
   }
+  /* Hide arrow for items in the submenu */
   
 /* Submenu visible on hover */
 nav ul li:hover .submenu{
@@ -64,7 +75,6 @@ nav ul li:hover .submenu{
 .submenu ul{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .submenu ul li{
     margin-right: 0;

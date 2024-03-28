@@ -1,0 +1,141 @@
+.container{
+    background-color: #000000;
+}
+
+.wall{
+    position: relative; /* Make .wall the positioning context for pseudo-elements */
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wall::before{
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../public/images/garage.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(0.3);
+    z-index: 0; /* Ensure the background is behind content */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../../../public/images/garage.jpg');
+}
+
+.wall img{
+    height: 20%;
+    object-fit: contain;
+    position: relative; /* Ensure the image is positioned in relation to .wall */
+}
+
+.presentation{
+    width: 80%;
+    margin: 35px auto;
+    min-height: 85vh;
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    visibility: hidden;
+}
+.presentation-text{
+    width: 40%;
+    display: flex;
+    gap: 55px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+}
+.presentation-image{
+    width: 50%;
+}
+.horaires-background {
+    width: 100%; /* Full width of the viewport */
+    background-color: #1A1A1A; /* Background color spanning the full width */
+    display: flex;
+    justify-content: center; /* Centers the .horaires-wrapper horizontally */
+    padding: 20px 0; /* Adds some vertical padding for space above and below */
+}
+.horaires-wrapper{
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 20px; /* Adjust padding if needed for the smaller size */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 50%; /* Max width of 50% of the viewport */
+    margin: auto; /* Center the wrapper horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds depth */
+}
+
+.schedule-list, .current-status {
+    flex: 1;
+    padding: 10px; /* Adjust padding for a tighter look */
+}
+
+.horaires {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.current-status {
+    max-width: 300px; /* Adjust accordingly if needed */
+    text-align: center;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button{
+    background-color: #8d1414;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #6d6c6a;
+}
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #8d1414; /* Highlight focus with a dual outline */
+}
+@keyframes slideAndFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.presentation.hidden {
+    visibility: hidden;
+}
+
+.presentation.appear {
+    visibility: visible;
+    animation: slideAndFade 0.7s ease-out forwards;
+}
+
+
