@@ -4,19 +4,24 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import "./styles/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCar, faLock , faPhone } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+import Footer from "./components/footer";
+
 
 function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false); // Use to display open/closed status
   const presentationRef = useRef(null);
+  const { t, i18n } = useTranslation();
   const openingHours = [
-    { day: "Lundi", hours: ["08:00-12:00", "13:00-17:00"] },
-    { day: "Mardi", hours: ["08:00-12:00", "13:00-17:00"] },
-    { day: "Mercredi", hours: ["08:00-12:00", "13:00-17:00"] },
-    { day: "Jeudi", hours: ["08:00-12:00", "13:00-17:00"] },
-    { day: "Vendredi", hours: ["08:00-12:00", "13:00-17:00"] },
-    { day: "Samedi", hours: ["08:00-12:00"] },
-    { day: "Dimanche", hours: [] },
+    { day: t('lundi'), hours: ["08:00-12:00", "13:00-17:00"] },
+    { day: t('mardi'), hours: ["08:00-12:00", "13:00-17:00"] },
+    { day: t('mercredi'), hours: ["08:00-12:00", "13:00-17:00"] },
+    { day: t('jeudi'), hours: ["08:00-12:00", "13:00-17:00"] },
+    { day: t('vendredi'), hours: ["08:00-12:00", "13:00-17:00"] },
+    { day: t('samedi'), hours: ["08:00-12:00"] },
+    { day: t('dimanche'), hours: [] },
   ];
 
   useEffect(() => {
@@ -70,9 +75,9 @@ function HomePage() {
           <img src="./images/logo-pneus.png" alt="" />
         </div>
         <div className="horaires-background">
+              <h3 class="horaire-title">{t('horaire')}</h3>
           <div className="horaires-wrapper">
             <div className="schedule-list">
-              <h3>Horaires d'ouverture</h3>
               {openingHours.map(({ day, hours }) => (
                 <div key={day} className="horaires">
                   <strong>{day}:</strong> {hours.join(" / ")}
@@ -80,9 +85,31 @@ function HomePage() {
               ))}
             </div>
             <div className="current-status">
+              {isOpen ? (
+                <FontAwesomeIcon
+                  icon={faCar}
+                  size="2x"
+                  className="status-icon"
+                />
+              ) : (
+                <FontAwesomeIcon
+                  icon={faLock}
+                  size="2x"
+                  className="status-icon"
+                />
+              )}
               <p>
-                Le garage est actuellement{" "}
-                <strong>{isOpen ? "ouvert" : "fermé"}</strong>.
+                {t('legarage')}{" "}
+                <strong>{isOpen ? t('ouvert') : t('fermé')}</strong>.
+              </p>
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  size="2x"
+                  className="status-icon"
+                />
+              <p>
+                {t('question')}{" "}
+                <strong>01 23 45 67 89</strong>.
               </p>
             </div>
           </div>
@@ -103,6 +130,7 @@ function HomePage() {
             <img src="./images/garage-face.webp" alt="" />
           </div>
         </div>
+      <Footer />
       </div>
     </main>
   );

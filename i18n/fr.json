@@ -7,5 +7,18 @@
     "jantes":"jantes",
     "pneus":"pneus",
     "partenaires":"partenaires",
-    "title":"Pneus bosmans"
+    "title":"Pneus bosmans",
+    "horaire":"Horaire",
+    "lundi":"Lundi",
+    "mardi":"Mardi",
+    "mercredi":"Mercredi",
+    "jeudi":"Jeudi",
+    "vendredi":"Vendredi",
+    "samedi":"Samedi",
+    "dimanche":"Dimanche",
+    "fermé":"Fermé",
+    "ouvert":"Ouvert",
+    "legarage":"Le garage est actuellement",
+    "question":"Pour toute question, vous pouvez nous joindre au"
+
 }

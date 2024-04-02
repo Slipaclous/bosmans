@@ -1,0 +1,137 @@
+footer {
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: 20px; /* Espace autour du contenu intérieur */
+    font-size: 0.9rem; /* Taille de police générale */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Répartit uniformément les colonnes */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
+    margin-bottom: 20px; /* Espace avant les crédits */
+}
+
+.footer-content__contact,
+.footer-content__hours,
+.footer-content__presentation {
+    flex: 1;
+    min-width: 220px; /* Assure une largeur minimale pour chaque colonne */
+    margin: 10px; /* Espacement autour des colonnes */
+    height: 100%;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px; /* Espace sous les titres */
+    color: #f2f2f2; /* Couleur des titres */
+}
+
+.footer-content p,
+.footer-content a {
+    margin-bottom: 10px; /* Espacement entre les paragraphes/liens */
+    color: #bbb; /* Couleur légèrement plus claire pour le texte et les liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.footer-content a:hover {
+    color: #fff; /* Couleur des liens au survol */
+}
+
+.footer-credits {
+    text-align: center;
+    color: #aaa; /* Couleur plus discrète pour les crédits */
+    padding-top: 10px; /* Espace au-dessus des crédits */
+    border-top: 1px solid #444; /* Ligne de séparation */
+}
+
+.status-icon {
+    margin-right: 5px; /* Espacement avant le texte des icônes */
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 220px; /* Assure une largeur minimale pour la colonne des liens */
+    border-radius: 8px; /* Bords arrondis pour l'esthétique */
+    font-size: 1rem;
+    margin: 10px;
+}
+.link-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-title {
+    color: #FFF; /* Couleur du titre pour contraste */
+    margin-bottom: 30px; /* Espace sous le titre */
+    border-bottom:1px solid #f2f2f2 ;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.links ul {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+.links li {
+    text-align: center;
+}
+
+.links li a {
+    color: #CCC; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: color 0.3s ease; /* Transition pour le survol */
+}
+
+.links li a:hover {
+    color: #FFF; /* Couleur au survol */
+}
+.footer-content__contact{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    align-items: center;
+}
+.footer-content__contact a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-content__contact a:hover{
+    color: #f2f2f2;
+}
+.footer-content__hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.footer-content__hours p{
+    margin: 0;
+}
+/* Adaptations pour petits écrans */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content__contact,
+    .footer-content__hours,
+    .footer-content__presentation {
+        min-width: 100%; /* Les colonnes prennent toute la largeur */
+        margin: 10px 0; /* Espacement ajusté pour la disposition verticale */
+    }
+}

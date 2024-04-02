@@ -60,44 +60,66 @@
     width: 50%;
 }
 .horaires-background {
-    width: 100%; /* Full width of the viewport */
-    background-color: #1A1A1A; /* Background color spanning the full width */
-    display: flex;
-    justify-content: center; /* Centers the .horaires-wrapper horizontally */
-    padding: 20px 0; /* Adds some vertical padding for space above and below */
+    width: 100%;
+    background-color: #FFFFFF; /* White background for the full-width background */
+
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
 }
-.horaires-wrapper{
-    background-color: #1A1A1A;
-    color: #FFFFFF;
-    padding: 20px; /* Adjust padding if needed for the smaller size */
+
+.horaires-wrapper {
+    max-width: 50%;
+    background-color: #FFFFFF; /* Ensures the content wrapper is also white */
+    color: #000000; /* Black text for contrast */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+    border-radius: 8px; /* Optional: rounds the corners */
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 50%; /* Max width of 50% of the viewport */
-    margin: auto; /* Center the wrapper horizontally */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds depth */
+    margin: 0 auto;
 }
 
 .schedule-list, .current-status {
     flex: 1;
     padding: 10px; /* Adjust padding for a tighter look */
 }
-
+.horaire-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+}
 .horaires {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.status-icon {
+    display: block;
+    margin-top: 10px;
+    color: #900a0a; /* Adjust icon color for visibility */
+}
+
+.isOpen .status-icon {
+    color: #4BB543; /* Green for open */
+}
+
+.isClosed .status-icon {
+    color: #FF4141; /* Red for closed */
 }
 
 .current-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     max-width: 300px; /* Adjust accordingly if needed */
     text-align: center;
     padding: 20px;
-    background-color: #282828;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.3rem;
+    background-color: #FFFFFF; /* Optional: can be omitted if `.horaires-wrapper` is already styled */
+    color: #000000; /* Ensures visibility against a white background */
 }
 .button{
     background-color: #8d1414;

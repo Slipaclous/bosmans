@@ -7,6 +7,18 @@
     "jantes": "velgen",
     "pneus": "banden",
     "partenaires": "partners",
-    "title":"banden bosmans"
+    "title":"banden bosmans",
+    "horaire": "Openingsuren",
+    "lundi": "Maandag",
+    "mardi": "Dinsdag",
+    "mercredi": "Woensdag",
+    "jeudi": "Donderdag",
+    "vendredi": "Vrijdag",
+    "samedi": "Zaterdag",
+    "dimanche": "Zondag",
+    "fermé": "Gesloten",
+    "ouvert": "Open",
+    "legarage":"de garage is momenteel",
+    "question":"Voor eventuele vragen kunt u contact met ons opnemen via"
     
 }
