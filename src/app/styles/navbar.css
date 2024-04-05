@@ -86,17 +86,28 @@ nav ul li:hover .submenu{
     transition: 0.3s;
 }
 
-@media (max-width:1200px){
+@media (max-width:1400px){
     nav ul li{
         font-size: 0.9rem;
     }
     nav ul{
-        width: 55%;
+        width: 65%;
     }
     .buttons button{
         font-size: 0.9rem;
     }
     .buttons{
         left: 93%;
+    }
+}
+@media(max-width:1200px){
+    nav ul {
+        width: 75%;
+    }
+    nav ul li{
+        font-size: 0.7rem;
+    }
+    nav h2{
+        font-size: 1rem;
     }
 }

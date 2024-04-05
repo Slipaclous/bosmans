@@ -1,7 +1,6 @@
 "use client";
 
-// Navbar.js
-import React,{useState}  from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import '../../../i18n/i18n';
@@ -9,7 +8,10 @@ import '../styles/navbar.css';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const [submenuVisible, setSubmenuVisible] = useState(false);
+  const [servicesSubmenuVisible, setServicesSubmenuVisible] = useState(false);
+  const [entretiensSubmenuVisible, setEntretiensSubmenuVisible] = useState(false);
+  const servicesRef = useRef(null);
+  const entretiensRef = useRef(null);
 
   const switchToFrench = () => {
     i18n.changeLanguage('fr');
@@ -18,9 +20,32 @@ const Navbar = () => {
   const switchToDutch = () => {
     i18n.changeLanguage('nl');
   };
-  const toggleSubmenu = () => {
-    setSubmenuVisible(!submenuVisible);
+
+  const toggleServicesSubmenu = () => {
+    setServicesSubmenuVisible(!servicesSubmenuVisible);
   };
+
+  const toggleEntretiensSubmenu = () => {
+    setEntretiensSubmenuVisible(!entretiensSubmenuVisible);
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
+        setServicesSubmenuVisible(false);
+      }
+      if (entretiensRef.current && !entretiensRef.current.contains(event.target)) {
+        setEntretiensSubmenuVisible(false);
+      }
+    }
+
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [servicesRef, entretiensRef]);
 
   return (
     <nav>
@@ -31,9 +56,9 @@ const Navbar = () => {
             {t('home')}
           </Link>
         </li>
-        <li onClick={toggleSubmenu}>
+        <li ref={servicesRef} onClick={toggleServicesSubmenu}>
           <span>{t('services')}</span>
-          <ul className={`submenu ${submenuVisible ? 'visible' : ''}`}>
+          <ul className={`submenu ${servicesSubmenuVisible ? 'visible' : ''}`}>
             <li>
               <Link href="/services/pneus">
                 {t('pneus')}
@@ -51,14 +76,30 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
+        <li ref={entretiensRef} onClick={toggleEntretiensSubmenu}>
+          <span>{t('entretiens')}</span>
+          <ul className={`submenu ${entretiensSubmenuVisible ? 'visible' : ''}`}>
+            <li>
+              <Link href="/entretiens/controle_technique">
+                {t('controle technique')}
+              </Link>
+            </li>
+            <li>
+              <Link href="/entretiens/climatisation">
+                {t('climatisation')}
+              </Link>
+            </li>
+            <li>
+              <Link href="/entretiens/autres">
+                {t('autres')}
+              </Link>
+            </li>
+          </ul>
+        </li>
+        
         <li>
           <Link href="/partenaires">
             {t('partenaires')}
-          </Link>
-        </li>
-        <li>
-          <Link href="/entretiens">
-            {t('entretiens')}
           </Link>
         </li>
         <li>
@@ -86,4 +127,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-

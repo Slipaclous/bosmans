@@ -62,8 +62,7 @@
 .horaires-background {
     width: 100%;
     background-color: #FFFFFF; /* White background for the full-width background */
-
-    padding: 20px 0;
+    padding: 40px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
 }
 
@@ -159,5 +158,9 @@
     visibility: visible;
     animation: slideAndFade 0.7s ease-out forwards;
 }
-
+@media (max-width:1200px){
+    .presentation-image img{
+        width: 100%;
+    }
+}
 

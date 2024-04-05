@@ -1,8 +1,8 @@
 footer {
     background-color: #333; /* Couleur de fond du footer */
     color: #fff; /* Couleur du texte */
-    padding: 20px; /* Espace autour du contenu intérieur */
     font-size: 0.9rem; /* Taille de police générale */
+    min-height: 55vh;
 }
 
 .footer-content {
@@ -10,17 +10,28 @@ footer {
     justify-content: space-around; /* Répartit uniformément les colonnes */
     flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
     margin-bottom: 20px; /* Espace avant les crédits */
+    align-items: center;
+    min-height: 50vh;
 }
 
 .footer-content__contact,
 .footer-content__hours,
-.footer-content__presentation {
+.footer-content__links {
     flex: 1;
-    min-width: 220px; /* Assure une largeur minimale pour chaque colonne */
-    margin: 10px; /* Espacement autour des colonnes */
-    height: 100%;
+    width: 30%; /* Assure une largeur minimale pour chaque colonne */
+    margin: 30px; /* Espacement autour des colonnes */
+    min-height: 45vh;
+    display: flex;
+    align-items:center;
+    
 }
-
+.infos-cont{
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+}
 .footer-content h3 {
     margin-bottom: 15px; /* Espace sous les titres */
     color: #f2f2f2; /* Couleur des titres */
@@ -47,15 +58,16 @@ footer {
 .status-icon {
     margin-right: 5px; /* Espacement avant le texte des icônes */
 }
-.links {
+.footer-content__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-    min-width: 220px; /* Assure une largeur minimale pour la colonne des liens */
-    border-radius: 8px; /* Bords arrondis pour l'esthétique */
+    min-width: 220px; /* Assure une largeur minimale pour la colonne des liens */ /* Bords arrondis pour l'esthétique */
     font-size: 1rem;
     margin: 10px;
+    border-left:1px solid #ffffff;
+    border-right:1px solid #ffffff;
 }
 .link-col{
     display: flex;
@@ -67,14 +79,13 @@ footer {
 .footer-title {
     color: #FFF; /* Couleur du titre pour contraste */
     margin-bottom: 30px; /* Espace sous le titre */
-    border-bottom:1px solid #f2f2f2 ;
     width: 50%;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.4rem;
 }
 
-.links ul {
+.footer-content__links ul {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -82,20 +93,21 @@ footer {
     justify-content: space-around;
     list-style: none; /* Supprime les puces */
     padding: 0; /* Supprime le padding par défaut */
-    margin: 0; /* Supprime la marge par défaut */
+    margin: auto; /* Supprime la marge par défaut */
+
 }
 
-.links li {
+.footer-content__links li {
     text-align: center;
 }
 
-.links li a {
+.footer-content__links li a {
     color: #CCC; /* Couleur des liens */
     text-decoration: none; /* Supprime le soulignement */
     transition: color 0.3s ease; /* Transition pour le survol */
 }
 
-.links li a:hover {
+.footer-content__links li a:hover {
     color: #FFF; /* Couleur au survol */
 }
 .footer-content__contact{
@@ -117,9 +129,21 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    
 }
 .footer-content__hours p{
     margin: 0;
+}
+.footer-content__hours .horaires{
+    color: #d5d3d3;
+    padding: 0;
+}
+.schedule-list{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
 }
 /* Adaptations pour petits écrans */
 @media (max-width: 768px) {

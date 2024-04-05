@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/footer.css";
-import { faCar, faLock, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone,faEnvelope,faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 const Footer = () => {
@@ -25,20 +25,23 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content__contact">
           <h3 class="footer-title">INFOS</h3>
+          <div className="infos-cont">
+
           <p>
             <FontAwesomeIcon icon={faPhone} />
             <a href="tel:+32475234567"> +32 475 23 45 67</a>
           </p>
           <p>
-            <FontAwesomeIcon icon={faCar} />
-            <span> {t("adresse")} </span>
+            <FontAwesomeIcon icon={faLocationDot} />
+            <span> Chaussée d'Enghien 67, 1540 Herne</span>
           </p>
           <p>
-            <FontAwesomeIcon icon={faLock} />
-            <a href="mailto:gauthier.minor@gmail.com"></a>
+            <FontAwesomeIcon icon={faEnvelope} />
+            <span> Anne.bosmans@outlook.com</span>
           </p>
+          </div>
         </div>
-        <div className="links">
+        <div className="footer-content__links">
           <h3 class="footer-title">{t("liens")}</h3>
           <ul>
             
@@ -61,7 +64,10 @@ const Footer = () => {
               <Link href="/partenaires">{t("partenaires")}</Link>
             </li>
             <li>
-              <Link href="/entretiens">{t("entretiens")}</Link>
+              <Link href="/entretiens">{t("controle technique")}</Link>
+            </li>
+            <li>
+              <Link href="/entretiens">{t("climatisation")}</Link>
             </li>
             <li>
               <Link href="/about">{t("about")}</Link>
@@ -72,13 +78,14 @@ const Footer = () => {
             
           </ul>
         </div>
+       
 
         <div className="footer-content__hours">
           <h3 class="footer-title">{t("horaire")}</h3>
           <div className="schedule-list">
             {openingHours.map(({ day, hours }) => (
               <div key={day} className="horaires">
-                <strong>{day}:</strong> {hours.join(" / ")}
+                <strong>{day}</strong>: {hours.join(" / ")}
               </div>
             ))}
           </div>

@@ -1,0 +1,38 @@
+.container-partenaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    min-height: 88vh;
+    width: 100%;
+  }
+  
+  .gros-partenaires, .petits-partenaires {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+/* partenaires.css */
+.logo-partenaire {
+    max-width: 100%; /* Adaptation à la taille du conteneur */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    will-change: transform, opacity;
+  }
+  
+  .logo-partenaire:hover {
+    transform: scale(1.15); /* Agrandit légèrement le logo */
+    opacity: 0.9; /* Rend le logo légèrement transparent */
+  }
+  
+  
+  .gros-partenaire {
+    max-width: 300px; /* Taille spécifique pour les gros partenaires */
+  }
+  
+  .petit-partenaire {
+    max-width: 150px; /* Taille spécifique pour les petits partenaires */
+  }

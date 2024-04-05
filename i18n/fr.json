@@ -1,12 +1,12 @@
 {
-    "home":"accueil",
-    "about":"à propos",
-    "contact":"contact",
-    "services":"services",
-    "entretiens":"entretiens",
-    "jantes":"jantes",
-    "pneus":"pneus",
-    "partenaires":"partenaires",
+    "home":"Accueil",
+    "about":"À  propos",
+    "contact":"Contact",
+    "services":"Services",
+    "entretiens":"Entretiens",
+    "jantes":"Jantes",
+    "pneus":"Pneus",
+    "partenaires":"Partenaires",
     "title":"Pneus bosmans",
     "horaire":"Horaire",
     "lundi":"Lundi",
@@ -19,6 +19,9 @@
     "fermé":"Fermé",
     "ouvert":"Ouvert",
     "legarage":"Le garage est actuellement",
-    "question":"Pour toute question, vous pouvez nous joindre au"
+    "question":"Pour toute question, vous pouvez nous joindre au",
+    "controle technique":"Controle technique",
+    "climatisation":"Climatisation",
+    "autres":"Autres"
 
 }

@@ -19,6 +19,9 @@
     "fermé": "Gesloten",
     "ouvert": "Open",
     "legarage":"de garage is momenteel",
-    "question":"Voor eventuele vragen kunt u contact met ons opnemen via"
+    "question":"Voor eventuele vragen kunt u contact met ons opnemen via",
+    "controle technique":"technische controle",
+    "climatisation":"airco",
+    "autres":"anderen"
     
 }
