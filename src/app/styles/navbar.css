@@ -13,17 +13,16 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
-    justify-content: space-around;
-    width: 60%;
+    width: 50%;
+    gap: 45px;
+    
 }
-nav ul li{
-    margin-right: 10px;
-    padding: 20px;
-}
+
 nav ul li a{
     color: white;
     text-decoration: none;
     transition: 0.3s;
+    font-size: 1rem;
 }
 nav ul li a:hover{
     color: rgb(249, 5, 5);
@@ -43,15 +42,22 @@ nav ul li a:hover{
     display: none; /* Initially hidden */
     position: absolute;
     background-color: #333;
-    width: 10%;
+    width: 13%;
     z-index: 1;
     padding: 20px;
     transition: opacity 0.3s ease; /* Add transition property */
     opacity: 0; /* Initially fully transparent */
+    transform: translateX(-25px);
+    padding: 20px;
+  }
+  .submenu li a {
   }
   .submenu.visible {
-    display: block;
+    display: flex;
     opacity: 1; /* Make it fully opaque when visible */
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
   }
   
   /* Keep the rest of your existing CSS */
@@ -70,17 +76,15 @@ nav ul > li span::after {
   /* Hide arrow for items in the submenu */
   
 /* Submenu visible on hover */
-nav ul li:hover .submenu{
-    display: block;
-}
 .submenu ul{
     display: flex;
     flex-direction: column;
 }
-.submenu ul li{
+.submenu li{
     margin-right: 0;
+    margin-top: 15px;
 }
-.submenu ul li a{
+.submenu li a{
     color: white;
     text-decoration: none;
     transition: 0.3s;

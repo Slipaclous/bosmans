@@ -56,9 +56,7 @@ const Navbar = () => {
             {t('home')}
           </Link>
         </li>
-        <li ref={servicesRef} onClick={toggleServicesSubmenu}>
-          <span>{t('services')}</span>
-          <ul className={`submenu ${servicesSubmenuVisible ? 'visible' : ''}`}>
+        
             <li>
               <Link href="/services/pneus">
                 {t('pneus')}
@@ -69,13 +67,6 @@ const Navbar = () => {
                 {t('jantes')}
               </Link>
             </li>
-            <li>
-              <Link href="/services/divers">
-                {t('divers')}
-              </Link>
-            </li>
-          </ul>
-        </li>
         <li ref={entretiensRef} onClick={toggleEntretiensSubmenu}>
           <span>{t('entretiens')}</span>
           <ul className={`submenu ${entretiensSubmenuVisible ? 'visible' : ''}`}>
@@ -89,17 +80,12 @@ const Navbar = () => {
                 {t('climatisation')}
               </Link>
             </li>
-            <li>
-              <Link href="/entretiens/autres">
-                {t('autres')}
-              </Link>
-            </li>
           </ul>
         </li>
         
         <li>
           <Link href="/partenaires">
-            {t('partenaires')}
+            leasing
           </Link>
         </li>
         <li>
