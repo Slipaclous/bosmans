@@ -84,7 +84,7 @@ const Navbar = () => {
         </li>
         
         <li>
-          <Link href="/partenaires">
+          <Link href="/leasing">
             leasing
           </Link>
         </li>

@@ -1,5 +1,6 @@
 .container{
     background-color: #000000;
+    
 }
 
 .wall{
@@ -29,7 +30,7 @@
 }
 
 .wall img{
-    height: 20%;
+    height: 100%;
     object-fit: contain;
     position: relative; /* Ensure the image is positioned in relation to .wall */
 }
@@ -46,6 +47,7 @@
     background-color: #000000;
     color: white;
     visibility: hidden;
+    
 }
 .presentation-text{
     width: 40%;
@@ -55,6 +57,9 @@
     justify-content: space-around;
     text-align: center;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
 }
 .presentation-image{
     width: 50%;
