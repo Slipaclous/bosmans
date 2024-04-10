@@ -158,4 +158,15 @@ footer {
         min-width: 100%; /* Les colonnes prennent toute la largeur */
         margin: 10px 0; /* Espacement ajusté pour la disposition verticale */
     }
+    .footer-content__links{
+        padding-top: 15px;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: none;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+
 }

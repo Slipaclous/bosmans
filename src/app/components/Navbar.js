@@ -3,11 +3,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../../../i18n/i18n';
 import '../styles/navbar.css';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const [sidebarVisible, setSidebarVisible] = useState(false);
   const [servicesSubmenuVisible, setServicesSubmenuVisible] = useState(false);
   const [entretiensSubmenuVisible, setEntretiensSubmenuVisible] = useState(false);
   const servicesRef = useRef(null);
@@ -47,9 +50,12 @@ const Navbar = () => {
     };
   }, [servicesRef, entretiensRef]);
 
-  return (
-    <nav>
-      <h2>{t('title')}</h2>
+  return (<header>
+
+      <FontAwesomeIcon icon={faBars} className="burger-icon" onClick={() => setSidebarVisible(!sidebarVisible)} />
+    <nav className={`${sidebarVisible ? 'sidebar-visible' : ''}`}>
+      
+      <img class="titre-site" src="/images/bosmans.png" alt="" />
       <ul>
         <li>
           <Link href="/">
@@ -109,6 +115,7 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
+  </header>
   );
 }
 

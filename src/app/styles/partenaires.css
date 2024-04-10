@@ -179,12 +179,14 @@
   border-radius: 10px; /* Rounded corners for a modern look */
   padding: 20px;
   width: 25%;
+  height: 15vh;
   background-color: #ffffff9e; /* Background for contrast */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interaction */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .leasing-title {
   color: #cccaca; /* Use site’s accent color */
@@ -221,6 +223,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .partner img {
@@ -239,7 +242,32 @@
 .official-partner .partner:hover img {
   transform: scale(1.05); /* Slight grow effect on hover */
 }
+.partner-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(187, 2, 2, 0.75); /* Semi-transparent black background */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Some padding */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Hide it */
+  transition: opacity 0.3s, visibility 0.3s; /* Animate visibility and opacity */
+}
+.partner-info a{
+  color: white;
+  text-decoration: none;
 
+}
+.partner:hover .partner-info {
+  opacity: 1; /* Make it visible on hover */
+  visibility: visible; /* Show it */
+}
+.partner-official:hover .partner-info {
+  opacity: 1; /* Make it visible on hover */
+  visibility: visible; /* Show it */
+}
 .partner:hover img {
   transform: scale(1.1);
 }
@@ -254,4 +282,37 @@
 .partner:hover {
   transform: translateY(-5px); /* Slight raise effect on hover */
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover for depth */
+}
+
+@media (max-width: 768px) {
+  .partner {
+    width: 45%; /* Adjust for smaller screens */
+  }
+  .partner-official {
+    width: 70%; /* Adjust for smaller screens */
+  }
+  .partner img {
+    width: 70%; /* Adjust for smaller screens */
+  }
+  .official-partner img {
+    width: 70%; /* Adjust for smaller screens */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner {
+    width: 100%; /* Adjust for smallest screens */
+    height: 35vh;
+  }
+  .partner-official {
+    width: 100%; /* Adjust for smallest screens */
+  }
+  .partner img {
+    width: 100%; /* Adjust for smallest screens */
+  }
+  .official-partner img {
+    width: 100%; /* Adjust for smallest screens */
+    height: auto;
+  }
 }

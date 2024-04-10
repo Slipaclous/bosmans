@@ -1,6 +1,7 @@
 .container{
     background-color: #000000;
-    
+    margin: 0;
+    padding: 0 !important;
 }
 
 .wall{
@@ -169,3 +170,44 @@
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .wall img {
+        height: auto; /* Adjust the height to maintain aspect ratio */
+        width: 100%; /* Maximize width within .wall */
+    }
+    .presentation {
+        flex-direction: column;
+        width: 85%; /* Adjust width for smaller screens */
+        gap: 20px; /* Reduce gap */
+        margin: 0 auto;
+    }
+    .presentation-text{
+        width: 80%;
+        padding: 0;
+    }
+    .presentation-text, .presentation-image {
+        width: 100%; /* Full width for both text and image */
+    }
+    .horaires-wrapper {
+        flex-direction: column; /* Stack schedule list and current status */
+        max-width: 100%; /* Allow full width */
+        align-items: center;
+    }
+
+    .schedule-list, .current-status {
+        width: 100%; /* Full width for both elements */
+        padding: 20px; /* Increase padding for touch targets */
+    }
+    .button {
+        width: 80%; /* Increase width for easier clicking */
+        padding: 15px 20px; /* Increase padding */
+    }
+    .schedule-list{
+        padding: 0px;
+        align-items: center;
+    }
+}

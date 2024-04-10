@@ -17,7 +17,10 @@ nav ul{
     gap: 45px;
     
 }
-
+.titre-site{
+    width: 15vw;
+    font-weight: bold;
+}
 nav ul li a{
     color: white;
     text-decoration: none;
@@ -58,6 +61,7 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: space-around;
     padding: 25px;
+    transform: ease-in-out 1s ; ;
   }
   
   /* Keep the rest of your existing CSS */
@@ -89,6 +93,21 @@ nav ul > li span::after {
     text-decoration: none;
     transition: 0.3s;
 }
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem; /* Adjust size as needed */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  /* Styles for sidebar */
+  nav.sidebar-visible .nav-links,
+  nav.sidebar-visible .buttons {
+    display: block;
+  }
 
 @media (max-width:1400px){
     nav ul li{
@@ -113,5 +132,128 @@ nav ul > li span::after {
     }
     nav h2{
         font-size: 1rem;
+    }
+}
+/* Hide navigation links and buttons initially in mobile view */
+@media (max-width: 800px) {
+    .burger-icon {
+        display: block;
+    }
+
+    nav ul.nav-links,
+    .buttons {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0; /* Remove gap for vertical layout */
+    }
+
+    nav ul.nav-links li,
+    .buttons button {
+        display: block;
+        width: 100%;
+        text-align: center; /* Center content */
+    }
+
+    /* Display sidebar when active */
+    nav.sidebar-visible ul.nav-links,
+    nav.sidebar-visible .buttons {
+        display: flex; /* Use flexbox for layout */
+    }
+}
+
+/* Sidebar Styling */
+nav.sidebar-visible {
+    position: fixed; /* Stick to the viewport */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full viewport height */
+    width: 250px; /* Sidebar width */
+    background-color: #333; /* Match navbar color */
+    flex-direction: column; /* Align items vertically */
+    justify-content: start; /* Align items to the start */
+    padding-top: 20px; /* Space from top */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+nav.sidebar-visible ul {
+    flex-direction: column;
+}
+
+/* Ensure visibility of submenus within the sidebar */
+
+
+.nav-links li span::after, .nav-links li a {
+    color: white; /* Ensure text visibility */
+}
+
+/* Burger Icon Styling */
+.burger-icon {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    color: #ae1212;
+    font-size: 24px; /* Adjust icon size */
+    cursor: pointer;
+    z-index: 2000; /* Ensure it's above other content */
+}
+
+@media (max-width: 800px) {
+    nav {
+        height: 100vh;
+        justify-content: space-between; /* Adjust content spacing */
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+        display: flex;
+        visibility: hidden; /* Ensures nav is not visible when off-screen */
+        position: absolute; /* Takes nav out of document flow when off-screen */
+        top: 0;
+        left: 0;
+       flex-direction: column;
+            overflow: hidden; /* Prevent nav items from showing outside during transition */
+        
+        
+    }
+
+    /* Transform sidebar for visibility */
+    nav.sidebar-visible {
+        transform: translateX(0);
+        transition: transform 0.5s ease;
+        display: flex;
+        visibility: visible; /* Make sidebar visible */
+        position: fixed; /* Keep sidebar in place during scroll */
+        
+    }
+    nav .buttons{
+        display: none;
+    }
+    nav ul li {
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+    .titre-site{
+        margin-top: 50px;
+        width: 200px;
+    }
+    nav ul{
+        margin-top: 50px;
+        padding: 0;
+        align-items: center;
+    }
+    nav.sidebar-visible .buttons{
+        margin-top: 45px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 0;
+    }
+    .buttons button{
+        font-size: 1.2rem;
+    }
+    nav.sidebar-visible .submenu{
+        position: static;
+        transform: translateX(55px);
     }
 }

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, {useRef,useState} from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import "../styles/contact.css";
@@ -7,8 +7,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone,faEnvelope,faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import BackToTopButton from "../components/BackToTopButton";
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA  from "react-google-recaptcha-v3";
 
 function contact() {
+  const [token, setToken] = useState(''); // Store the ReCAPTCHA token
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [successMessage, setSuccessMessage] = useState('');
+  const recaptchaRef = useRef();
+
+
+
+
+  const handleToken = (token) => {
+    console.log("Token received:", token); // Add this line to check if the token is being received
+    setToken(token);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_hsnjwxq', 'template_w9td2do', e.target, 'K5Twd1LE__X0iu0pO')
+      .then((result) => {
+        console.log(result.text);
+        setFormData({ name: '', email: '', message: '' }); // Réinitialiser les champs du formulaire
+        setSuccessMessage('Votre message a été envoyé avec succès !'); // Afficher la bannière de succès
+        setTimeout(() => {
+          setSuccessMessage(''); // Cacher la bannière de succès après 3 secondes
+        }, 3000);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
   return (
     <main>
       <Navbar />
@@ -30,13 +70,36 @@ function contact() {
           </div>
             <div className="contact-form">
                 <h2>Contactez-nous</h2>
-                <form>
-                <input type="text" placeholder="Nom" />
-                <input type="email" placeholder="Email" />
-                <textarea placeholder="Message"></textarea>
+                <form onSubmit={handleOnSubmit} method="POST">
+                <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+          />
+                <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+          />
+                <textarea
+            id="message"
+            name="message"
+            required
+            value={formData.message}
+            onChange={handleChange}
+          ></textarea>
+          <div className="button-div">
+            
                 <button type="submit">Envoyer</button>
+</div>
                 </form>
-
+                {successMessage && <div className="success-message">{successMessage}</div>}
             </div>
         </div>
         <div class="iframe" >
