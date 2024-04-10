@@ -187,10 +187,22 @@
     }
     .presentation-text{
         width: 80%;
+        min-height: 55vh;
         padding: 0;
+        margin-top: 55px;
     }
     .presentation-text, .presentation-image {
         width: 100%; /* Full width for both text and image */
+        margin-bottom: 55px;
+    }
+    .presentation-text p {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .presentation-text h2 {
+        font-size: 1.5rem; /* Adjust font size */
+        width: 75%;
+        margin: 0 auto;
     }
     .horaires-wrapper {
         flex-direction: column; /* Stack schedule list and current status */
@@ -200,7 +212,11 @@
 
     .schedule-list, .current-status {
         width: 100%; /* Full width for both elements */
-        padding: 20px; /* Increase padding for touch targets */
+        padding: 20px;
+         /* Increase padding for touch targets */
+    }
+    .current-status p {
+        margin:25px 0px;
     }
     .button {
         width: 80%; /* Increase width for easier clicking */

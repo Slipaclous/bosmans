@@ -168,5 +168,11 @@ footer {
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff;
     }
+    .footer-content__links ul {
+        margin-bottom: 35px;
+    }
+    .footer-title{
+        margin-top: 35px;
+    }
 
 }
