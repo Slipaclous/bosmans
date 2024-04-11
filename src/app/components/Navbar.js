@@ -62,7 +62,11 @@ const Navbar = () => {
             {t('home')}
           </Link>
         </li>
-        
+        <li>
+          <Link href="/about">
+            {t('about')}
+          </Link>
+        </li>
             <li>
               <Link href="/services/pneus">
                 {t('pneus')}
@@ -94,11 +98,7 @@ const Navbar = () => {
             leasing
           </Link>
         </li>
-        <li>
-          <Link href="/about">
-            {t('about')}
-          </Link>
-        </li>
+        
         <li>
           <Link href="/contact">
             {t('contact')}
