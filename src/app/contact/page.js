@@ -19,6 +19,7 @@ function contact() {
   });
   const [successMessage, setSuccessMessage] = useState('');
   const recaptchaRef = useRef();
+  const { t } = useTranslation();
 
 
 
@@ -69,12 +70,13 @@ function contact() {
             </div>
           </div>
             <div className="contact-form">
-                <h2>Contactez-nous</h2>
+                <h2>{t('contactez-nous')}</h2>
                 <form onSubmit={handleOnSubmit} method="POST">
                 <input
             type="text"
             id="name"
             name="name"
+            placeholder="Name"
             required
             value={formData.name}
             onChange={handleChange}
@@ -83,6 +85,7 @@ function contact() {
             type="email"
             id="email"
             name="email"
+            placeholder="Email"
             required
             value={formData.email}
             onChange={handleChange}
@@ -90,13 +93,14 @@ function contact() {
                 <textarea
             id="message"
             name="message"
+            placeholder="Message"
             required
             value={formData.message}
             onChange={handleChange}
           ></textarea>
           <div className="button-div">
             
-                <button type="submit">Envoyer</button>
+                <button type="submit">{t('envoyer')}</button>
 </div>
                 </form>
                 {successMessage && <div className="success-message">{successMessage}</div>}

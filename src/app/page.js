@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faLock, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import Footer from "./components/footer";
+import BackToTopButton from "./components/BackToTopButton";
 
 function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -117,15 +118,13 @@ function HomePage() {
           className={`presentation ${isVisible ? "appear" : ""}`}
         >
           <div className="presentation-text">
-            <h2>Notre passion à votre service , depuis 78 ans !</h2>
+            <h2>Notre passion à votre service , depuis 88 ans !</h2>
             <FontAwesomeIcon icon="fa-regular fa-tire" />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
-              aspernatur est aliquam expedita, dolores rem autem nisi accusamus
-              repellat nulla a sunt id amet assumenda impedit, pariatur commodi
-              sed numquam dolor architecto alias eum labore veniam eos! Iste
-              consectetur nihil aspernatur ratione vitae aut repellat maiores
-              sunt, unde voluptatibus. Dolore!
+              Notre garage est une affaire familiale qui a été transmise de
+              génération en génération. Nous sommes spécialisés dans la vente de
+              pneus et jantes, ainsi que dans l'entretien et la réparation de
+              véhicules. Nous travaillons depuis 88 ans maintenant pour vous offrir un service de qualité , rapide et efficace.
             </p>
             <a className="button" href="/about">
               En savoir plus
@@ -136,6 +135,7 @@ function HomePage() {
           </div>
         </div>
         <Footer />
+        <BackToTopButton />
       </div>
     </main>
   );

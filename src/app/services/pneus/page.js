@@ -5,8 +5,10 @@ import Footer from "@/app/components/footer";
 import BackToTopButton from "@/app/components/BackToTopButton";
 import PartnerCard from "@/app/components/partner";
 import "../../styles/pneus.css";
+import { useTranslation } from "react-i18next";
 
 function pneus() {
+  const { t } = useTranslation();
   const premiumPatners =[
     {name : "Goodyear", logo : "/images/logos/goodyear.png", url: "https://www.goodyear.eu/fr_fr/consumer.html"},
     {name:'Continental', logo : '/images/logos/continentals.png', url: 'https://www.continental-pneus.fr/'},
@@ -23,13 +25,13 @@ function pneus() {
     <main>
       <Navbar />
       <div className="partners">
-        <h2 className="partner-title">Nos partenaires Premium</h2>
+        <h2 className="partner-title">{t("Nos partenaires premium")}</h2>
         <div className="partners-list premium">
           {premiumPatners.map((partner, index) => (
             <PartnerCard key={index} {...partner} isPremium={true} />
           ))}
         </div>
-        <h2 className="partner-title">Nos autres partenaires</h2>
+        <h2 className="partner-title">{t("Nos autres partenaires")}</h2>
         <div className="partners-list">
           {otherPartners.map((partner, index) => (
             <PartnerCard key={index} {...partner} isPremium={false} />
@@ -37,8 +39,8 @@ function pneus() {
         </div>
       </div>
       <div className="others-partners">
-        <h3>Et bien d'autres encore ..</h3>
-        <p>Nous travaillons égalements avec d'autres marques , pour toutes informations supplémentaires n'hésitez pas à nous contacter via <a href="/contact">ce formulaire ou par téléphone</a></p>
+        <h3>{t("Et bien d'autres encore")}</h3>
+        <p>{t("egalement")} <a href="/contact">{t("formulaire")}</a></p>
       </div>
       <BackToTopButton />
       <Footer/>

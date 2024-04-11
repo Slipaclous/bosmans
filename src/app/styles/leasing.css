@@ -179,7 +179,7 @@
   border-radius: 10px; /* Rounded corners for a modern look */
   padding: 20px;
   width: 25%;
-  height: 15vh;
+  height: 25vh;
   background-color: #ffffff9e; /* Background for contrast */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interaction */
   display: flex;

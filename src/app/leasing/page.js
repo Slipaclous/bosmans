@@ -3,8 +3,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import BackToTopButton from "../components/BackToTopButton";
-import '../styles/partenaires.css';
+import '../styles/leasing.css';
+import { useTranslation } from "react-i18next";
+
 function Partenaires() {
+    const { t } = useTranslation();
     const partners = [
         // Exclude "Lease-plan" from this list if rendering it separately
         { name: "ALD", logo: "/images/leasing/ald.png", url: "https://www.aldautomotive.be/fr"},
@@ -22,23 +25,23 @@ function Partenaires() {
             <div className="container-leasing">
                 {/* Dedicated section for the official partner */}
                 <div className="official-partner">
-                    <h2 className="leasing-title">Notre partenaire officiel</h2>
+                    <h2 className="leasing-title">{t('partenaire-o')}</h2>
                     <div className="partner-official">
                         <img src="/images/leasing/lease-plan.png" alt="Lease-plan" />
                         <div className="partner-info">
-                            <a href="https://www.leaseplan.com/fr-be/" target="_blank" rel="noopener noreferrer">Visiter le site</a>
+                            <a href="https://www.leaseplan.com/fr-be/" target="_blank" rel="noopener noreferrer">{t('visitez')}</a>
                         </div>
                     </div>
                 </div>
                 {/* Section for other partners */}
-                <h2 className="leasing-title">Nous travallions également avec :</h2>
+                <h2 className="leasing-title">{t('egal')}</h2>
                 <div className="partners-flex">
         {partners.map((partner, index) => (
           <div key={index} className="partner">
             <img src={partner.logo} alt={partner.name} />
             {/* Add this div for the hover effect */}
             <div className="partner-info">
-              <a href={partner.url} target="_blank" rel="noopener noreferrer">Visit Website</a>
+              <a href={partner.url} target="_blank" rel="noopener noreferrer">{t('visitez')}</a>
             </div>
           </div>
         ))}
