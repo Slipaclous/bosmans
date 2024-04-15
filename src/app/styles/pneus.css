@@ -108,6 +108,9 @@
   .partnerCard p {
     margin-top: 10px;
   }
+  .others-partners p a {
+    color: #D32F2F;
+    }
 
   @media (max-width: 768px) {
     

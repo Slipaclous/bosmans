@@ -1,6 +1,8 @@
 // components/BackToTopButton.js
 import React, { useState, useEffect } from 'react';
 import '../styles/button.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +46,7 @@ const BackToTopButton = () => {
           // Add more styles as needed
         }}
       >
-        ↑
+        <FontAwesomeIcon icon={faArrowUp} />
       </button>
     )
   );

@@ -117,8 +117,13 @@ function HomePage() {
           ref={presentationRef}
           className={`presentation ${isVisible ? "appear" : ""}`}
         >
+          <div className="presentation-title">
+
+            <h2>Notre <span>passion</span> </h2>
+            <h2>À votre <span>service</span> </h2>
+            <h2>Depuis <span>88 ans</span> !</h2>
+          </div>
           <div className="presentation-text">
-            <h2>Notre passion à votre service , depuis 88 ans !</h2>
             <p>
               Notre garage est une affaire familiale qui a été transmise de
               génération en génération. Nous sommes spécialisés dans la vente de
@@ -129,9 +134,7 @@ function HomePage() {
               En savoir plus
             </a>
           </div>
-          <div className="presentation-image">
-            <img src="./images/garage-face.webp" alt="" />
-          </div>
+          
         </div>
         <Footer />
         <BackToTopButton />
