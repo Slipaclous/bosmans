@@ -1,0 +1,140 @@
+.marques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+.marque{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    position: relative;
+    width: 50%;
+    color: white;
+    overflow: hidden; /* Ensures the pseudo-element does not exceed the div */
+}
+.marque::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Inherits the background-image of the parent */
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(100%) brightness(100%); /* Default filter with grayscale and full brightness */
+    transition: filter 0.5s ease; /* Transition affects both grayscale and brightness changes */
+    z-index: 0; /* Ensures it's below the content but above the actual background */
+}
+
+.marque:hover::before{
+    filter: grayscale(0%) brightness(65%); /* On hover, remove grayscale and apply brightness of 65% */
+}
+.marque p {
+    z-index: 5;
+    width: 50%;
+    max-height: 0; /* Start with no height */
+    overflow: hidden; /* Prevent content from spilling out */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition for max-height */
+    padding: 0 20px; /* Add padding for text inside p */
+}
+
+.marque:hover p {
+    max-height: 100px; /* Adjust this value based on your content's typical height */
+}
+.marque a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    color: white;
+    padding: 8px;
+    /* linear gradient background */
+    background: linear-gradient(0deg, #D32F2F 0%, #D32F2F 80%); 
+    width: 30%;
+    text-align: center;
+
+}
+.marque h4{
+    z-index: 5;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.marque:hover h4 {
+    max-height: 100px;
+    z-index: 6;
+}
+.marque:hover a {
+    max-height: 100px;
+    z-index: 6;
+}
+
+.marque img{
+    width: 50%;
+    height: auto;
+    transition: transform 0.2s;
+    z-index: 5;
+}
+.jantes-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+.alcar{
+    background-image: url(../../../public/images/jantes/alcar-background\ .webp);
+    transform: grayscale(100%);
+    background-size: cover;
+    background-position: center center;
+}
+/* creating a before of each oftyo apply the filter only to background */
+
+
+.atraxion{
+    background-image: url(../../../public/images/jantes/atraxion-background.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 768px) {
+    .marque{
+        width: 100%;
+    }
+    .marque p{
+        width: 80%;
+        max-height: 100px;
+    }
+    .marque h4{
+        width: 80%;
+        max-height: 100px;
+    }
+    .marque a{
+        width: 50%;
+        max-height: 100px;
+        z-index: 6;
+    }
+    .marque::before{
+        filter: grayscale(0%) brightness(65%);
+    }
+}
+@media (max-width: 1024px) {
+    .marque p{
+        width: 80%;
+    }
+    .marque h4{
+        width: 80%;
+    }
+    .marque a{
+        width: 50%;
+    }
+}

@@ -108,7 +108,7 @@ function HomePage() {
                 className="status-icon"
               />
               <p>
-                {t("question")} <strong>01 23 45 67 89</strong>.
+                {t("question")} <strong>+32 475 23 45 67</strong>.
               </p>
             </div>
           </div>
@@ -119,7 +119,6 @@ function HomePage() {
         >
           <div className="presentation-text">
             <h2>Notre passion à votre service , depuis 88 ans !</h2>
-            <FontAwesomeIcon icon="fa-regular fa-tire" />
             <p>
               Notre garage est une affaire familiale qui a été transmise de
               génération en génération. Nous sommes spécialisés dans la vente de
