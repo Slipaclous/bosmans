@@ -5,6 +5,7 @@ import Footer from "@/app/components/footer";
 import BackToTopButton from "@/app/components/BackToTopButton";
 import "../../styles/jantes.css";
 import { useTranslation } from "react-i18next";
+import CookieConsent from "@/app/components/CookieConsent";
 
 function jantes() {
     const { t } = useTranslation();
@@ -12,6 +13,7 @@ function jantes() {
 
     return(
         <main>
+            <CookieConsent />
             <Navbar />
             <div className="jantes-container">
                 <div className="marques">

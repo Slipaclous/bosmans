@@ -6,6 +6,7 @@ import BackToTopButton from "@/app/components/BackToTopButton";
 import PartnerCard from "@/app/components/partner";
 import "../../styles/pneus.css";
 import { useTranslation } from "react-i18next";
+import CookieConsent from "@/app/components/CookieConsent";
 
 function pneus() {
   const { t } = useTranslation();
@@ -55,6 +56,7 @@ function pneus() {
   ];
   return (
     <main>
+      <CookieConsent />
       <Navbar />
       <div className="tires-container">
       <div className="partners">

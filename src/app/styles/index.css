@@ -212,7 +212,6 @@ h2 span{
     }
     .presentation {
         flex-direction: column;
-        width: 85%; /* Adjust width for smaller screens */
         gap: 20px; /* Reduce gap */
         margin: 0 auto;
     }

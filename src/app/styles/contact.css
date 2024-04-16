@@ -90,4 +90,15 @@
       flex-direction: column;
     }
   }
+  @media (max-width: 450px) {
+    .contact-wrapper {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .iframe{
+      width: 95%;
+    }
+  }
+
+
   

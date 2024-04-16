@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import BackToTopButton from "../components/BackToTopButton";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA  from "react-google-recaptcha-v3";
+import CookieConsent from "../components/CookieConsent";
 
 function contact() {
   const [token, setToken] = useState(''); // Store the ReCAPTCHA token
@@ -52,6 +53,7 @@ function contact() {
   };
   return (
     <main>
+      <CookieConsent />
       <Navbar />
       <div className="container-contact">
         <div className="contact-wrapper">

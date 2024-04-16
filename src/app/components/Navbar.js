@@ -34,21 +34,35 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleClickOutside(event) {
+      // Check if the click is on a link element inside the sidebar
+      if (event.target.closest('a') && event.target.closest('nav')) {
+        return;  // Ignore the click since it's a navigation link within the sidebar
+      }
+  
+      // Handling outside click for the services submenu
       if (servicesRef.current && !servicesRef.current.contains(event.target)) {
         setServicesSubmenuVisible(false);
       }
+  
+      // Handling outside click for the entretiens submenu
       if (entretiensRef.current && !entretiensRef.current.contains(event.target)) {
         setEntretiensSubmenuVisible(false);
+      }
+  
+      // Handling outside click for the sidebar
+      // Check if the sidebar is visible and the click is outside the navbar
+      if (sidebarVisible && event.target.closest('nav') !== document.querySelector('nav')) {
+        setSidebarVisible(false);
       }
     }
 
     // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [servicesRef, entretiensRef]);
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    // Unbind the event listener on clean up
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [servicesRef, entretiensRef, sidebarVisible]);
 
   return (<header>
 

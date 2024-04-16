@@ -1,0 +1,27 @@
+.banner{
+    position: relative;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#8d1414 ;
+    color: white;
+    overflow: hidden;
+    transition: opacity 0.5s ease-out, height 0.5s ease-out;
+}
+.button-banner{
+    position: absolute;
+    top: 30%;
+    left: 95%;
+    transform: translate(-50%);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.3rem;
+}
+.banner.hide {
+    opacity: 0;
+    height: 0;
+    padding: 0 10px; /* Adjust padding if necessary */
+}

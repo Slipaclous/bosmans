@@ -48,7 +48,7 @@ nav ul li a:hover{
     width: 13%;
     z-index: 1;
     padding: 20px;
-    transition: opacity 0.3s ease; /* Add transition property */
+    transition: opacity 0.3s ease-in-out; /* Add transition property */
     opacity: 0; /* Initially fully transparent */
     transform: translateX(-25px);
     padding: 20px;
@@ -175,7 +175,7 @@ nav.sidebar-visible {
     justify-content: start; /* Align items to the start */
     padding-top: 20px; /* Space from top */
     transform: translateX(-100%);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 nav.sidebar-visible ul {
@@ -205,7 +205,7 @@ nav.sidebar-visible ul {
         height: 100vh;
         justify-content: space-between; /* Adjust content spacing */
         transform: translateX(-100%);
-        transition: transform 0.5s ease;
+        transition: transform 0.5s ease-in-out;
         display: flex;
         visibility: hidden; /* Ensures nav is not visible when off-screen */
         position: absolute; /* Takes nav out of document flow when off-screen */
@@ -218,7 +218,7 @@ nav.sidebar-visible ul {
     /* Transform sidebar for visibility */
     nav.sidebar-visible {
         transform: translateX(0);
-        transition: transform 0.5s ease;
+        transition: transform 0.5s ease-in-out;
         display: flex;
         visibility: visible; /* Make sidebar visible */
         position: fixed; /* Keep sidebar in place during scroll */

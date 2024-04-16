@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import BackToTopButton from "../components/BackToTopButton";
 import '../styles/leasing.css';
 import { useTranslation } from "react-i18next";
+import CookieConsent from "../components/CookieConsent";
 
 function Partenaires() {
     const { t } = useTranslation();
@@ -21,6 +22,7 @@ function Partenaires() {
 
     return (
         <main>
+            <CookieConsent />
             <Navbar />
             <div className="container-leasing">
                 {/* Dedicated section for the official partner */}

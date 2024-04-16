@@ -5,6 +5,7 @@ import Footer from '@/app/components/footer';
 import '../../styles/climatisation.css'
 import BackToTopButton from '@/app/components/BackToTopButton';
 import { useTranslation } from 'react-i18next';
+import CookieConsent from '@/app/components/CookieConsent';
 
 function EntretienClimatisation() {
     const { t } = useTranslation();
@@ -31,6 +32,7 @@ function EntretienClimatisation() {
       }, []);
     return (
         <main>
+            <CookieConsent/>
             <Navbar/>
             <div className="container-entretien-climatisation">
                 <h1>{t('climatisation-titre')}</h1>

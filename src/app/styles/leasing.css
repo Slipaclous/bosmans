@@ -137,6 +137,10 @@
     width: 70%; /* Adjust for smaller screens */
     height: auto;
   }
+  .partner-info{
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @media (max-width: 480px) {

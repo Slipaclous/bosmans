@@ -5,6 +5,7 @@ import Footer from '@/app/components/footer';
 import '../../styles/cTechnique.css'
 import BackToTopButton from '@/app/components/BackToTopButton';
 import { useTranslation } from 'react-i18next';
+import CookieConsent from '@/app/components/CookieConsent';
 
 function cTechnique() {
     const { t } = useTranslation();
@@ -32,6 +33,7 @@ function cTechnique() {
     return (
         <main>
             <Navbar/>
+            <CookieConsent/>
             <div className="container-ctechnique">
             <h1>{t("preparation")}</h1>
             <section className="animated-section">

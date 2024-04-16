@@ -8,12 +8,17 @@ import { faCar, faLock, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import Footer from "./components/footer";
 import BackToTopButton from "./components/BackToTopButton";
+import Banner from "./components/Banner";
+import Cookies from "js-cookie";
+import CookieConsent from "./components/CookieConsent";
 
 function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false); // Use to display open/closed status
   const presentationRef = useRef(null);
   const { t, i18n } = useTranslation();
+  const [showBanner, setShowBanner] = useState(false);
+  const [hideBanner, setHideBanner] = useState(false);
   const openingHours = [
     { day: t("lundi"), hours: ["08:00-12:00", "13:00-17:00"] },
     { day: t("mardi"), hours: ["08:00-12:00", "13:00-17:00"] },
@@ -23,6 +28,21 @@ function HomePage() {
     { day: t("samedi"), hours: ["08:00-12:00"] },
     { day: t("dimanche"), hours: [] },
   ];
+
+  useEffect(() => {
+    const hasVisited = Cookies.get("hasVisited");
+    if (!hasVisited) {
+      setShowBanner(true);
+      Cookies.set("hasVisited", "true", { expires: 7 });
+    }
+  }, []);
+
+  const closeBanner = () => {
+    setHideBanner(true); // Start the hide animation
+    setTimeout(() => {
+      setShowBanner(false); // Remove the banner from the DOM after the animation
+    }, 500); // This should match the duration of the CSS transition
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,6 +89,8 @@ function HomePage() {
 
   return (
     <main>
+      <CookieConsent />
+       {showBanner && <Banner   closeBanner={closeBanner} hide={hideBanner} />}
       <Navbar />
       <div className="container">
         <div className="wall">
