@@ -18,7 +18,7 @@ export default function About() {
       
       </div> */}
       <div className="wait">
-        <h1>Cette page est actuellement en maintenace.</h1>
+        <h1>Cette page est actuellement en maintenance.</h1>
         <a href="/">Revenir à l'accueil</a>
       </div>
         <BackToTopButton />
