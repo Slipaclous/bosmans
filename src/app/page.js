@@ -26,7 +26,7 @@ function HomePage() {
     { day: t("jeudi"), hours: ["08:00-12:00", "13:00-17:00"] },
     { day: t("vendredi"), hours: ["08:00-12:00", "13:00-17:00"] },
     { day: t("samedi"), hours: ["08:00-12:00"] },
-    { day: t("dimanche"), hours: [] },
+    { day: t("dimanche"), hours: [t("ferme")] },
   ];
 
   useEffect(() => {

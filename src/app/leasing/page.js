@@ -11,13 +11,13 @@ function Partenaires() {
     const { t } = useTranslation();
     const partners = [
         // Exclude "Lease-plan" from this list if rendering it separately
-        { name: "ALD", logo: "/images/leasing/ald.png", url: "https://www.aldautomotive.be/fr"},
-        { name: "Alphabet", logo: "/images/leasing/alphabet.png", url: "https://www.alphabet.com/fr-be"},
+        { name: "ALD", logo: "/images/leasing/ald.png", url: "https://www.aldautomotive.be"},
+        { name: "Alphabet", logo: "/images/leasing/alphabet.png", url: "https://www.alphabet.com"},
         { name: "Arval", logo: "/images/leasing/arval.png", url: "https://www.arval.be/fr-be"},
-        { name: "Athlon", logo: "/images/leasing/athlon.png", url: "https://www.athlon.com/be/fr"},
-        { name: "Belfius", logo: "/images/leasing/belfius.png", url: "https://www.belfius.be/fr"},
-        { name: "KBC", logo: "/images/leasing/kbc.png", url: "https://www.kbc.be/fr"},
-        { name: "Vancia", logo: "/images/leasing/vancia.webp", url: "https://www.vancia.be/fr"},
+        { name: "Athlon", logo: "/images/leasing/athlon.png", url: "https://www.athlon.com/be"},
+        { name: "Belfius", logo: "/images/leasing/belfius.png", url: "https://www.belfius-autolease.be/FR/index.aspx?firstWA=no"},
+        { name: "KBC", logo: "/images/leasing/kbc.png", url: "https://www.kbc.be/corporate/fr/produit/financer/leasing/leasing-auto-full-service.html"},
+        { name: "Vancia", logo: "/images/leasing/vancia.webp", url: "https://www.vanciacarlease.com/fr"},
     ];
 
     return (

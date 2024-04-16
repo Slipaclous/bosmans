@@ -60,3 +60,15 @@
 .swiper-scrollbar-drag {
   background: #ff0000;
 }
+.wait{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 88vh;
+}
+.wait a {
+
+  font-size: 1.5rem;
+
+}

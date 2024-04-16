@@ -22,7 +22,7 @@ function jantes() {
                         <p>
                             {t('alcar-text')}.
                         </p>
-                        <a href=""> {t('visitez')} </a>
+                        <a href="https://www.alcar.be" target="_blank" rel="noopener noreferrer"> {t('visitez')} </a>
                         <h4>{t('toutes-jantes')} </h4>
                     </div>
                     <div className="marque atraxion">
@@ -30,7 +30,7 @@ function jantes() {
                         <p>
                         {t('atraxion-text')}s.
                         </p>
-                        <a href=""> {t('visitez')} </a>
+                        <a href="https://www.atraxion.com" target="_blank" rel="noopener noreferrer"> {t('visitez')} </a>
                 <h4>{t('toutes-jantes')} </h4>
                     </div>
                 </div>

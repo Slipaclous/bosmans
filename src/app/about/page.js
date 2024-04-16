@@ -13,11 +13,15 @@ export default function About() {
     <main>
       <CookieConsent />
       <Navbar />
-      <div className="container-about">
-        <MySwiper /> {/* Use the Swiper component */}
-        {/* Any other content */}
-        <BackToTopButton />
+      {/* <div className="container-about">
+        <MySwiper />
+      
+      </div> */}
+      <div className="wait">
+        <h1>Cette page est actuellement en maintenace.</h1>
+        <a href="/">Revenir à l'accueil</a>
       </div>
+        <BackToTopButton />
       <Footer />
     </main>
   );

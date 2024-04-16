@@ -5,174 +5,115 @@ footer {
     min-height: 55vh;
 }
 
-.footer-content {
+.footer-contents {
     display: flex;
-    justify-content: space-around; /* Répartit uniformément les colonnes */
+    justify-content: center; /* Répartit uniformément les colonnes */
     flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
-    margin-bottom: 20px; /* Espace avant les crédits */
     align-items: center;
     min-height: 50vh;
+    gap: 100px;
 }
-
-.footer-content__contact,
-.footer-content__hours,
-.footer-content__links {
-    flex: 1;
-    width: 30%; /* Assure une largeur minimale pour chaque colonne */
-    margin: 30px; /* Espacement autour des colonnes */
-    min-height: 45vh;
+.footer-images{
     display: flex;
-    align-items:center;
-    
-}
-.infos-cont{
-    margin:  auto;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    gap: 50px;
-}
-.footer-content h3 {
-    margin-bottom: 15px; /* Espace sous les titres */
-    color: #f2f2f2; /* Couleur des titres */
-}
-
-.footer-content p,
-.footer-content a {
-    margin-bottom: 10px; /* Espacement entre les paragraphes/liens */
-    color: #bbb; /* Couleur légèrement plus claire pour le texte et les liens */
-    text-decoration: none; /* Supprime le soulignement des liens */
-}
-
-.footer-content a:hover {
-    color: #fff; /* Couleur des liens au survol */
-}
-
-.footer-credits {
-    text-align: center;
-    color: #aaa; /* Couleur plus discrète pour les crédits */
-    padding-top: 10px; /* Espace au-dessus des crédits */
-    border-top: 1px solid #444; /* Ligne de séparation */
-}
-
-.status-icon {
-    margin-right: 5px; /* Espacement avant le texte des icônes */
-}
-.footer-content__links {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 1;
-    min-width: 220px; /* Assure une largeur minimale pour la colonne des liens */ /* Bords arrondis pour l'esthétique */
-    font-size: 1rem;
-    margin: 10px;
-    border-left:1px solid #ffffff;
-    border-right:1px solid #ffffff;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
-.link-col{
+.logo-bosmans{
+    width: 150px;
+    height: 150px;
+}
+.text-bosmans{
+    width: 150px;
+    height: auto;
+}
+.footer-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #bd0d0d;
+    margin-bottom: 30px;
+}
+.adresse{
+    margin-bottom: 50px;
+}
+.footer-links{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.footer-title {
-    color: #FFF; /* Couleur du titre pour contraste */
-    margin-bottom: 30px; /* Espace sous le titre */
-    width: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-}
-
-.footer-content__links ul {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     justify-content: space-around;
-    list-style: none; /* Supprime les puces */
-    padding: 0; /* Supprime le padding par défaut */
-    margin: auto; /* Supprime la marge par défaut */
+    flex-direction: column;
 
 }
-
-.footer-content__links li {
-    text-align: center;
+.horaire{
+    padding: 6px 0px;
 }
-
-.footer-content__links li a {
-    color: #CCC; /* Couleur des liens */
-    text-decoration: none; /* Supprime le soulignement */
-    transition: color 0.3s ease; /* Transition pour le survol */
-}
-
-.footer-content__links li a:hover {
-    color: #FFF; /* Couleur au survol */
-}
-.footer-content__contact{
+.footer-links ul{
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-    align-items: center;
-}
-.footer-content__contact a{
-    color: #fff;
-    text-decoration: none;
-}
-.footer-content__contact a:hover{
-    color: #f2f2f2;
-}
-.footer-content__hours{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    
-}
-.footer-content__hours p{
-    margin: 0;
-}
-.footer-content__hours .horaires{
-    color: #d5d3d3;
+    gap: 9px;
     padding: 0;
 }
-.schedule-list{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-}
-/* Adaptations pour petits écrans */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
+.footer-links ul li{
+    list-style: none;
 
-    .footer-content__contact,
-    .footer-content__hours,
-    .footer-content__presentation {
-        min-width: 100%; /* Les colonnes prennent toute la largeur */
-        margin: 10px 0; /* Espacement ajusté pour la disposition verticale */
+}
+.footer-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links ul li a:hover{
+    color: #bd0d0d;
+}
+.footer-credits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #858585;
+    padding: 10px 0;
+}
+.footer-credits a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-credits a:hover{
+    color: #bd0d0d;
+}
+
+@media (max-width:1024px){
+    .footer-contents{
+        flex-direction: column;
+        gap: 20px;
     }
-    .footer-content__links{
-        padding-top: 15px;
-        width: 80%;
+    .footer-links{
+        gap: 20px;
+        margin-bottom: 20px !important;
+    }
+    .footer-images{
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        border: none;
-        border-top: 1px solid #ffffff;
-        border-bottom: 1px solid #ffffff;
+        gap: 20px;
+        width: 50%;
+        margin-top: 20px;
     }
-    .footer-content__links ul {
-        margin-bottom: 35px;
+    .text-bosmans{
+        width: 150px;
+        height: auto;
     }
-    .footer-title{
-        margin-top: 35px;
+    .footer-content{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-credits{
+        gap: 20px;
+        margin-top: 20px;
+        flex-direction: column;
     }
 
 }
