@@ -25,3 +25,13 @@
     height: 0;
     padding: 0 10px; /* Adjust padding if necessary */
 }
+
+@media (max-width: 768px) {
+    .banner {
+        height: 15vh;
+    }
+    .banner p  {
+        width: 75%;
+        margin: 0 auto;
+    }
+}

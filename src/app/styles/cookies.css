@@ -37,4 +37,11 @@
     .cookie-consent button:hover {
         background-color: #8d1414;
     }
+
+    @media screen and (max-width: 768px) {
+        .cookie-consent {
+          flex-direction: column-reverse;
+          height: 75vh;
+        }
+      }
   
