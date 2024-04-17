@@ -150,7 +150,7 @@ function HomePage() {
               Notre garage est une affaire familiale qui a été transmise de
               génération en génération. Nous sommes spécialisés dans la vente de
               pneus et jantes, ainsi que dans l'entretien et la réparation de
-              véhicules. Nous travaillons depuis 88 ans maintenant pour vous offrir un service de qualité , rapide et efficace.
+              véhicules. Nous travaillons depuis 88 ans maintenant pour vous offrir un service de qualité, rapide et efficace.
             </p>
             <a className="button" href="/about">
               En savoir plus
