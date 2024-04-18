@@ -110,12 +110,13 @@ nav ul > li span::after {
     display: block;
   }
 
-@media (max-width:1400px){
-    nav ul li{
-        font-size: 0.9rem;
+@media (max-width:1200px){
+    nav ul li a{
+        font-size: 0.8rem;
     }
     nav ul{
-        width: 65%;
+        width: 75%;
+        justify-content: center;
     }
     .buttons button{
         font-size: 0.9rem;
@@ -132,6 +133,10 @@ nav ul > li span::after {
     }
     nav ul li a{
         font-size: 0.9rem;
+    }
+    nav ul{
+        width: 75%;
+        justify-content: center;
     }
 }
 /* Hide navigation links and buttons initially in mobile view */
