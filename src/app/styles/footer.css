@@ -116,7 +116,7 @@ footer {
         flex-direction: column;
     }
     .infos-contact p{
-        color: white;
+        color: white !important;
     }
 
 }
