@@ -29,7 +29,7 @@ function pneus() {
     {
       name: "Pirelli",
       logo: "/images/logos/pirelli.png",
-      url: "https://www.pirelli.com/fr_fr",
+      url: "https://www.pirelli.com/tyres/fr-be/voiture/home",
     },
   ];
   const otherPartners = [
@@ -41,17 +41,17 @@ function pneus() {
     {
       name: "Uniroyal",
       logo: "/images/logos/uniroyal.png",
-      url: "https://www.uniroyal.fr/",
+      url: "https://www.uniroyal-tyres.com/be/fr/",
     },
     {
       name: "Fulda",
       logo: "/images/logos/fulda.png",
-      url: "https://www.fulda.com/fr_fr.html",
+      url: "https://www.fulda.com/fr_be/consumer.html",
     },
     {
       name: "maxxis",
       logo: "/images/logos/maxxis.png",
-      url: "https://www.maxxis.fr/",
+      url: "https://www.maxxis.com/ca/fr/a-propos/la-marque-maxxis/",
     },
   ];
   return (
