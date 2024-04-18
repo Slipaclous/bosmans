@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-links footer-content">
-          <h3 className="footer-title">Liens utiles</h3>
+          <h3 className="footer-title title-links">Liens utiles</h3>
           <ul>
             <li>
               <Link href="/">{t("home")}</Link>

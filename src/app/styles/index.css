@@ -213,13 +213,12 @@ h2 span{
     .presentation {
         flex-direction: column;
         gap: 20px; /* Reduce gap */
-        margin: 0 auto;
+        margin: 50px auto;
     }
     .presentation-text{
         width: 80%;
         min-height: 55vh;
         padding: 0;
-        margin-top: 55px;
     }
     .presentation-text, .presentation-image {
         width: 100%; /* Full width for both text and image */

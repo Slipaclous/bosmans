@@ -68,8 +68,8 @@ const Navbar = () => {
 
       <FontAwesomeIcon icon={faBars} className="burger-icon" onClick={() => setSidebarVisible(!sidebarVisible)} />
     <nav className={`${sidebarVisible ? 'sidebar-visible' : ''}`}>
+      <a href="/"><img class="titre-site" src="/images/bosmans.png" alt="" /></a>
       
-      <img class="titre-site" src="/images/bosmans.png" alt="" />
       <ul>
         <li>
           <Link href="/">

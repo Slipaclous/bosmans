@@ -120,3 +120,9 @@ footer {
     }
 
 }
+
+@media (max-width:800px){
+    .title-links{
+        margin: 0;
+    }
+}
