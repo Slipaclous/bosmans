@@ -40,7 +40,6 @@ footer {
 }
 .footer-links{
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
 
 }
@@ -81,6 +80,13 @@ footer {
 }
 .footer-credits a:hover{
     color: #bd0d0d;
+}
+.footer-infos,.footer-horaire,.footer-links{
+    min-height: 37vh;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 @media (max-width:1024px){
