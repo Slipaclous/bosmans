@@ -35,7 +35,7 @@
 .leasing-title {
   color: #900a0a; /* Use site’s accent color */
   font-size: 1.7rem;
-  margin-bottom: 30px;
+  margin: 45px 0px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -75,7 +75,6 @@
 }
 .partner-official{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.42); /* Adds subtle shadow */
-  border-radius: 10px; /* Rounded corners for a modern look */
   padding: 20px;
   width: 25%;
   background-color: #ffffffa0; /* Background for contrast */
@@ -185,10 +184,12 @@
   }
   .partner img {
     width: 60%; /* Adjust for smaller screens */
+    margin-bottom: 7.5vw;
   }
   .official-partner img {
     width: 70%; /* Adjust for smaller screens */
     height: auto;
+    
   }
   .partner-info{
     opacity: 1;
