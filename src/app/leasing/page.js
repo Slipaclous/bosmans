@@ -74,6 +74,8 @@ function Partenaires() {
           <h2 className="leasing-title-partner">{t("egal")}</h2>
         </div>
         <div className="partners-flex">
+          <div className="partners-flex-cont">
+
           {partners.map((partner, index) => (
             <div key={index} className="partner">
               <img src={partner.logo} alt={partner.name} />
@@ -86,6 +88,7 @@ function Partenaires() {
             </div>
           ))}
         </div>
+          </div>
       </div>
       <Footer />
       <BackToTopButton />

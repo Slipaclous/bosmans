@@ -7,14 +7,22 @@
 .partners-flex {
   display: flex;
   flex-wrap: wrap;
-  width: 65%;
+  flex-direction: column;
+  width: 80%;
   gap: 0.5px;
   margin: 30px auto;
 }
+.partners-flex-cont{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 0.5px;
+  margin: 30px auto;
 
+}
 .partner {
-  width: 25vh;
-  height: 25vh;
+  width: 15vw;
+  height: 15vw;
   background-color: #ffffff9e; /* Background for contrast */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interaction */
   display: flex;
@@ -36,7 +44,7 @@
   font-size: 1.4rem;
   text-transform: uppercase;
   border-bottom: 2px solid #900a0a;
-  width: 25%;
+  display: inline-block;
   z-index: 3;
 }
 .cont-title{
@@ -137,10 +145,61 @@
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0); /* Enhanced shadow on hover for depth */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .partner {
-    width: 45%; /* Adjust for smaller screens */
+    width: 20vw; /* Adjust for smaller screens */
+    height: 20vw;
   }
+  .partner-official {
+    width: 40%; /* Adjust for smaller screens */
+  }
+  .partner img {
+    width: 60%; /* Adjust for smaller screens */
+  }
+  .official-partner img {
+    width: 70%; /* Adjust for smaller screens */
+    height: auto;
+  }
+  .leasing-title-partner{
+  }
+}
+
+@media (max-width: 1024px) {
+  .partner {
+    width: 40vw;
+    height: 40vw; /* Adjust for smaller screens */
+  }
+  .partners-flex{
+    justify-content: center;
+    width: 100%;
+  }
+  .partners-flex-cont{
+    justify-content: center;
+    width: 95%;
+  }
+  .cont-title{
+    width: 95%;
+  }
+  .partner-official {
+    width: 50%; /* Adjust for smaller screens */
+  }
+  .partner img {
+    width: 60%; /* Adjust for smaller screens */
+  }
+  .official-partner img {
+    width: 70%; /* Adjust for smaller screens */
+    height: auto;
+  }
+  .partner-info{
+    opacity: 1;
+    visibility: visible;
+  }
+  .cont-title{
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
   .partner-official {
     width: 70%; /* Adjust for smaller screens */
   }
@@ -159,8 +218,9 @@
 
 @media (max-width: 480px) {
   .partner {
-    width: 100%; /* Adjust for smallest screens */
-    height: 35vh;
+  }
+  .partners-flex-cont{
+    gap: 10px;
   }
   .partner-official {
     width: 100%; /* Adjust for smallest screens */
@@ -171,5 +231,8 @@
   .official-partner img {
     width: 100%; /* Adjust for smallest screens */
     height: auto;
+  }
+  .leasing-title-partner{
+    font-size: 1.2rem;
   }
 }
