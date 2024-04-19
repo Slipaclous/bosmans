@@ -75,20 +75,23 @@ function Partenaires() {
         </div>
         <div className="partners-flex">
           <div className="partners-flex-cont">
-
-          {partners.map((partner, index) => (
-            <div key={index} className="partner">
-              <img src={partner.logo} alt={partner.name} />
-              {/* Add this div for the hover effect */}
-              <div className="partner-info">
-                <a href={partner.url} target="_blank" rel="noopener noreferrer">
-                  {t("visitez")}
-                </a>
+            {partners.map((partner, index) => (
+              <div key={index} className="partner">
+                <img src={partner.logo} alt={partner.name} />
+                {/* Add this div for the hover effect */}
+                <div className="partner-info">
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t("visitez")}
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
           </div>
+        </div>
       </div>
       <Footer />
       <BackToTopButton />

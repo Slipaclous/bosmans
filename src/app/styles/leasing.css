@@ -9,15 +9,14 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 80%;
-  gap: 0.5px;
   margin: 30px auto;
 }
 .partners-flex-cont{
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  gap: 0.5px;
   margin: 30px auto;
+  overflow: hidden; /* To handle any extra borders */
 
 }
 .partner {
@@ -30,7 +29,33 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  border: 1px solid rgb(192, 192, 192);
+  border: 1px solid #9c9b9b; /* Border for contrast */
+}
+/* Remove the right border on the last items in a row */
+.partner:nth-child(3) {
+
+}
+.partner:nth-child(7) {
+border-top: none;
+}
+.partner:nth-child(5) {
+border-top: none;
+
+}
+.partner:nth-child(4) {
+border-left: none;
+
+}
+.partner:nth-child(2) {
+
+border-left: none;
+border-right: none;
+}
+.partner:nth-child(6) {
+
+border-top: none;
+border-left: none;
+border-right: none;
 }
 .leasing-title {
   color: #900a0a; /* Use site’s accent color */
@@ -146,8 +171,8 @@
 
 @media (max-width: 1440px) {
   .partner {
-    width: 20vw; /* Adjust for smaller screens */
-    height: 20vw;
+    width: 15vw; /* Adjust for smaller screens */
+    height: 15vw;
   }
   .partner-official {
     width: 40%; /* Adjust for smaller screens */
@@ -167,6 +192,17 @@
   .partner {
     width: 40vw;
     height: 40vw; /* Adjust for smaller screens */
+    /* display all the borders for eachcard */
+    border: 1px solid #9c9b9b !important; /* Border for contrast */
+  }
+  .partner:nth-child(3) {
+    border-right: none!important;
+  }
+  .partner:nth-child(1) {
+    border-right: none!important;
+  }
+  .partner:nth-child(5) {
+    border-right: none!important;
   }
   .partners-flex{
     justify-content: center;
@@ -220,9 +256,7 @@
 @media (max-width: 480px) {
   .partner {
   }
-  .partners-flex-cont{
-    gap: 10px;
-  }
+ 
   .partner-official {
     width: 100%; /* Adjust for smallest screens */
   }
