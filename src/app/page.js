@@ -130,7 +130,7 @@ function HomePage() {
                 className="status-icon"
               />
               <p>
-                {t("question")} <strong>+32 475 23 45 67</strong>.
+                {t("question")} <a classname="tel" href="tel:+32475234567">+32 475 23 45 67</a>.
               </p>
             </div>
           </div>

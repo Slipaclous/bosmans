@@ -28,13 +28,13 @@ const Footer = () => {
           <img className="text-bosmans" src="/images/text-bosmans.png" alt="" />
         </div>
         <div className="footer-infos footer-content">
-          <div className="infos-contact">
             <h3 className="footer-title">Contact</h3>
-            <p>+32 475 23 45 67</p>
-            <p className="adresse">Anne.bosmans@outlook.com</p>
+          <div className="infos-contact">
+            <a href="tel:+32475234567">+32 475 23 45 67</a>
+            <p className="">Anne.bosmans@outlook.com</p>
           </div>
+            <h3 className="footer-title adresse">Adresse</h3>
           <div className="infos-adress">
-            <h3 className="footer-title">Adresse</h3>
             <p>Chaussée d'Enghien 67 </p>
             <p>1540 Herne</p>
             <p>Belgique</p>
@@ -82,9 +82,9 @@ const Footer = () => {
       </div>
       <div className="footer-credits">
         <a href=""> Mentions légales</a>
-        <p> - </p>
+        <p className="dots"> - </p>
         <p> Site réalisé par G-Minor </p>
-        <p> - </p>
+        <p className="dots"> - </p>
         <p> Bosmans pneus  &copy; 2024 </p>
         </div>
     </footer>

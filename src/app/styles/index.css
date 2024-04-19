@@ -176,6 +176,14 @@ h2 span{
     outline: none;
     box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #8d1414; /* Highlight focus with a dual outline */
 }
+.current-status a{
+    text-decoration: none;
+    color: black;
+}
+.current-status a:hover{
+    color: #900a0a;
+    
+}
 @keyframes slideAndFade {
     from {
         opacity: 0;
