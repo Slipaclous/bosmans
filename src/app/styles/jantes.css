@@ -92,7 +92,7 @@
     text-align: center;
 }
 .alcar{
-    background-image: url(../../../public/images/jantes/alcar-background\ .webp);
+    background-image: url(../../../public/images/jantes/alcar-backgrounds.jpg);
     transform: grayscale(100%);
     background-size: cover;
     background-position: center center;
@@ -101,7 +101,7 @@
 
 
 .atraxion{
-    background-image: url(../../../public/images/jantes/atraxion-background.webp);
+    background-image: url(../../../public/images/jantes/atraxion-jantee.png);
     background-size: cover;
     background-position: center center;
 }

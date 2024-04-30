@@ -12,15 +12,16 @@ function pneus() {
   const { t } = useTranslation();
   const premiumPatners = [
     {
-      name: "Goodyear",
-      logo: "/images/logos/goodyear.png",
-      url: "https://www.goodyear.eu/fr_fr/consumer.html",
-    },
-    {
       name: "Continental",
       logo: "/images/logos/continentals.png",
       url: "https://www.continental-pneus.fr/",
     },
+    {
+      name: "Goodyear",
+      logo: "/images/logos/goodyear.png",
+      url: "https://www.goodyear.eu/fr_fr/consumer.html",
+    },
+    
     {
       name: "Dunlop",
       logo: "/images/logos/dunlop.png",

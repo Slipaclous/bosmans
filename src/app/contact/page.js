@@ -60,15 +60,15 @@ function contact() {
           <div className="contact-info">
             <div className="info">
                 <FontAwesomeIcon icon={faPhone} />
-                <a href="tel:+32475234567"> +32 475 23 45 67</a>
+                <a href="tel:+32475234567"> 02 396 11 84</a>
             </div>
             <div className="info">
                 <FontAwesomeIcon class="icon" icon={faLocationDot} />
-                <span> Chaussée d'Enghien 67, 1540 Herne</span>
+                <span> Edingsesteenweg 67, 1540 Herne</span>
             </div>
             <div className="info">
                 <FontAwesomeIcon icon={faEnvelope} />
-                <span>Anne.bosmans@outlook.com</span>
+                <span>bosmans.anne@outlook.com</span>
             </div>
           </div>
             <div className="contact-form">

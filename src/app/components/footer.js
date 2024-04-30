@@ -30,12 +30,12 @@ const Footer = () => {
         <div className="footer-infos footer-content">
             <h3 className="footer-title">Contact</h3>
           <div className="infos-contact">
-            <a href="tel:+32475234567">+32 475 23 45 67</a>
-            <p className="">Anne.bosmans@outlook.com</p>
+            <a href="tel:+32475234567">02 396 11 84</a>
+            <p className="">bosmans.anne@outlook.com</p>
           </div>
             <h3 className="footer-title adresse">Adresse</h3>
           <div className="infos-adress">
-            <p>Chaussée d'Enghien 67 </p>
+            <p>Edingsesteenweg 67 </p>
             <p>1540 Herne</p>
             <p>Belgique</p>
           </div>
