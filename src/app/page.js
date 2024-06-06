@@ -1,13 +1,10 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "./components/Navbar";
 import "./styles/index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faLock, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-import Footer from "./components/footer";
-import BackToTopButton from "./components/BackToTopButton";
 import Banner from "./components/Banner";
 import Cookies from "js-cookie";
 import CookieConsent from "./components/CookieConsent";
@@ -91,7 +88,6 @@ function HomePage() {
     <main>
       <CookieConsent />
        {showBanner && <Banner   closeBanner={closeBanner} hide={hideBanner} />}
-      <Navbar />
       <div className="container">
         <div className="wall">
           <img src="./images/logo-pneus.png" alt="" />
@@ -158,8 +154,7 @@ function HomePage() {
           </div>
           
         </div>
-        <Footer />
-        <BackToTopButton />
+
       </div>
     </main>
   );

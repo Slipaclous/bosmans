@@ -52,9 +52,9 @@ function contact() {
       });
   };
   return (
+    
     <main>
       <CookieConsent />
-      <Navbar />
       <div className="container-contact">
         <div className="contact-wrapper">
           <div className="contact-info">
@@ -118,10 +118,8 @@ function contact() {
             marginWidth="0"
             src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Chauss%C3%A9e%20d'Enghien%2067,%201540%20Herne+(banden%20bosmans)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
-          <BackToTopButton />
         </div>
 
-        <Footer />
       </div>
     </main>
   );

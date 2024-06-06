@@ -13,7 +13,6 @@ function jantes() {
   return (
     <main>
       <CookieConsent />
-      <Navbar />
       <div className="jantes-container">
         <div className="marques">
           
@@ -45,8 +44,6 @@ function jantes() {
           </div>
         </div>
       </div>
-      <Footer />
-      <BackToTopButton />
     </main>
   );
 }

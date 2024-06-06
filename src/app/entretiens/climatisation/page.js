@@ -33,7 +33,6 @@ function EntretienClimatisation() {
     return (
         <main>
             <CookieConsent/>
-            <Navbar/>
             <div className="container-entretien-climatisation">
                 <h1>{t('climatisation-titre')}</h1>
                 <section className="animated-section">
@@ -52,9 +51,7 @@ function EntretienClimatisation() {
                     <h2>{t('nos services')}</h2>
                     <p>{t('nos-text')}</p>
                 </section>
-                <BackToTopButton/>
             </div>
-                <Footer/>
         </main>
     );
 }

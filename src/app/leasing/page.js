@@ -51,7 +51,6 @@ function Partenaires() {
   return (
     <main>
       <CookieConsent />
-      <Navbar />
       <div className="container-leasing">
         {/* Dedicated section for the official partner */}
         <div className="official-partner">
@@ -93,8 +92,6 @@ function Partenaires() {
           </div>
         </div>
       </div>
-      <Footer />
-      <BackToTopButton />
     </main>
   );
 }

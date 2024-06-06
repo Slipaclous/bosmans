@@ -58,7 +58,6 @@ function pneus() {
   return (
     <main>
       <CookieConsent />
-      <Navbar />
       <div className="tires-container">
       <div className="partners">
         <h2 className="partner-title">{t("Nos partenaires premium")}</h2>
@@ -81,8 +80,6 @@ function pneus() {
         </p>
       </div>
       </div>
-      <BackToTopButton />
-      <Footer />
     </main>
   );
 }

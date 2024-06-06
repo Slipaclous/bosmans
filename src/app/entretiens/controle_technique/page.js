@@ -32,7 +32,6 @@ function cTechnique() {
       }, []);
     return (
         <main>
-            <Navbar/>
             <CookieConsent/>
             <div className="container-ctechnique">
             <h1>{t("preparation")}</h1>
@@ -52,9 +51,7 @@ function cTechnique() {
                     <h2>{t("nos services")}</h2>
                     <p>{t('services-text')}</p>
                 </section>
-                <BackToTopButton/>
             </div>
-                <Footer/>
         </main>
     );
 }

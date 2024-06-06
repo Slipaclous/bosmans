@@ -18,6 +18,7 @@
     color: white;
     overflow: hidden; /* Ensures the pseudo-element does not exceed the div */
 }
+
 .marque::before{
     content: "";
     position: absolute;
