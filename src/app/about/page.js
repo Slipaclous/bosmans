@@ -32,67 +32,67 @@ export default function About() {
         <div className="carousel-container">
       <Carousel showThumbs={false} autoPlay infiniteLoop>
           <div>
-            <img class="carousel-images" src="./images/about/company1.jpg" alt="Car 1" />
+            <img class="carousel-images" src="./images/about/company1.JPG" alt="Car 1" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company2.jpg" alt="Car 2" />
+            <img class="carousel-images" src="./images/about/company2.JPG" alt="Car 2" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company3.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company3.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company4.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company4.JPG" alt="Car 3" />
           </div>
           <div>
             <img class="carousel-images" src="./images/about/company5.jpg" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company9.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company9.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company10.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company10.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company11.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company11.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company13.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company13.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company14.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company14.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company15.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company15.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company16.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company16.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company17.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company17.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company18.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company18.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company19.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company19.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company20.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company20.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company21.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company21.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company22.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company22.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company23.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company23.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company24.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company24.JPG" alt="Car 3" />
           </div>
           <div>
-            <img class="carousel-images" src="./images/about/company25.jpg" alt="Car 3" />
+            <img class="carousel-images" src="./images/about/company25.JPG" alt="Car 3" />
           </div>
         {/* Add more images as needed */}
       </Carousel>
