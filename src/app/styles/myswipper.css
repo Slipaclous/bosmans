@@ -1,0 +1,22 @@
+/* components/Swiper.module.css */
+.mySwiper {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .mySwiper .swiper-button-next,
+  .mySwiper .swiper-button-prev {
+    color: #000; /* Change the color of the navigation arrows */
+  }
+  
+  .mySwiper .swiper-pagination-bullet {
+    background: #000; /* Change the color of pagination bullets */
+  }
+  
+  .image {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  

@@ -1,11 +1,8 @@
 "use client";
 import React, { useEffect } from 'react';
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/footer';
 import '../../styles/cTechnique.css'
-import BackToTopButton from '@/app/components/BackToTopButton';
 import { useTranslation } from 'react-i18next';
-import CookieConsent from '@/app/components/CookieConsent';
+import CookieConsent from '../../components/CookieConsent';
 
 function cTechnique() {
     const { t } = useTranslation();

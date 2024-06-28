@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "@/app/components/footer";
-import BackToTopButton from "@/app/components/BackToTopButton";
+
 import "../../styles/jantes.css";
 import { useTranslation } from "react-i18next";
-import CookieConsent from "@/app/components/CookieConsent";
+import CookieConsent from "../../components/CookieConsent";
 
 function jantes() {
   const { t } = useTranslation();

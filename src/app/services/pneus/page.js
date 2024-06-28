@@ -1,12 +1,9 @@
 "use client";
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "@/app/components/footer";
-import BackToTopButton from "@/app/components/BackToTopButton";
-import PartnerCard from "@/app/components/partner";
+import PartnerCard from "../../components/partner";
 import "../../styles/pneus.css";
 import { useTranslation } from "react-i18next";
-import CookieConsent from "@/app/components/CookieConsent";
+import CookieConsent from "../../components/CookieConsent";
 
 function pneus() {
   const { t } = useTranslation();

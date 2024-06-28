@@ -1,11 +1,8 @@
 "use client";
 import React, { useEffect } from 'react';
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/footer';
 import '../../styles/climatisation.css'
-import BackToTopButton from '@/app/components/BackToTopButton';
 import { useTranslation } from 'react-i18next';
-import CookieConsent from '@/app/components/CookieConsent';
+import CookieConsent from '../../components/CookieConsent';
 
 function EntretienClimatisation() {
     const { t } = useTranslation();
