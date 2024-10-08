@@ -32,9 +32,6 @@
   border: 1px solid #9c9b9b; /* Border for contrast */
 }
 /* Remove the right border on the last items in a row */
-.partner:nth-child(3) {
-
-}
 .partner:nth-child(7) {
 border-top: none;
 }
@@ -189,8 +186,6 @@ border-left: none;
     width: 70%; /* Adjust for smaller screens */
     height: auto;
   }
-  .leasing-title-partner{
-  }
 }
 
 @media (max-width: 1024px) {
@@ -259,9 +254,6 @@ border-left: none;
 }
 
 @media (max-width: 480px) {
-  .partner {
-  }
- 
   .partner-official {
     width: 100%; /* Adjust for smallest screens */
   }
