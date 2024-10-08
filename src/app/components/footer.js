@@ -33,7 +33,7 @@ const Footer = () => {
             <a href="tel:+32475234567">02 396 11 84</a>
             <p className="">bosmans.anne@outlook.com</p>
           </div>
-            <h3 className="footer-title adresse">Adresse</h3>
+            <h3 className="footer-title adresse">{t("adresse")}</h3>
           <div className="infos-adress">
             <p>Edingsesteenweg 67 </p>
             <p>1540 Herne</p>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-horaire footer-content">
-          <h3 className="footer-title">Horaire</h3>
+          <h3 className="footer-title">{t("horaire")}</h3>
           <div className="schedule-liste">
             {openingHours.map(({ day, hours }) => (
               <div key={day} className="horaire">
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-links footer-content">
-          <h3 className="footer-title title-links">Liens utiles</h3>
+          <h3 className="footer-title title-links">{t("liens")}</h3>
           <ul>
             <li>
               <Link href="/">{t("home")}</Link>

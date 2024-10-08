@@ -29,7 +29,7 @@
     "formulaire":"ce formulaire ou par téléphone",
     "preparation":"Préparation au controle technique",
     "introduction":"Introduction",
-    "introduction-text": "Avant de soumettre votre véhicule au contrôle technique, une visite préalable chez votre garagiste est fortement conseillée. Cela permet d'identifier et de corriger les éventuels problèmes pour assurer un passage réussi.",
+    "introduction-text": "Nous vérifions l'état des pneus , le réglagees des phares, les plaquettes et les disques de freins ainsi que les ammortisseurse et nous faisons éventuellement le petit entretien de votre voiture",
     "points de controle":"Points de contrôle",
     "controle-text":"Nous effectuons une vérification complète des points de contrôle exigés lors du contrôle technique, incluant les freins, les lumières, l'émission des gaz d'échappement, et bien d'autres aspects cruciaux pour votre sécurité et celle des autres usagers de la route.",
     "importance":"L'importance de la préparation",
@@ -52,15 +52,26 @@
     "alcar-text": "Alcar est un fabricant de jantes en acier et en aluminium. La société est basée en Allemagne et est l'un des plus grands fabricants de jantes en Europe.",
     "toutes-jantes":"Toutes les jantes sont disponible uniquement sur commande",
     "atraxion-text": " Atraxion est une marque de jantes en aluminium. La société est basée en France et propose des jantes de qualité à des prix abordables.",
-    "banner": "L'été arrive ! N'oubliez pas de venir faire changer vos pneus.",
+    "banner": "L'hiver arrive ! N'oubliez pas de venir faire changer vos pneus.",
     "cookie": "Nous utilisons des cookies pour améliorer votre expérience sur notre site. En acceptant, vous acceptez notre utilisation des cookies.",
     "accept":"J'accepte les cookies",
     "ferme":"Fermé",
     "about1" :"L'histoire de notre société commence en 1935 lorsque Arthur Bosmans se lance dans le commerce du pneu après avoir suivi une formation de vulcanisateur chez Doyen à Bruxelles.",
     "about2":"Après s'être caché pendant 5 ans lors de le seconde guerre, il commence son commerce de pneus. Depuis lors nous sommes la troisième génération qui exploitons ce commerce de pneus. Le métier a depuis bien changé car la technologie du pneu a fort heureusement évolué avec l'évolution des nouveaux véhicules.",
-    "about3":"Nous mettons un point d'honneur à répondre présent aux demandes de nos nombreux clients. Cela commence par l'accueil du client au comptoir. Nous sommes à l'écoute afin de pouvoir au mieux le conseiller et  ensuite le diriger vers nos ateliers où notre équipe de monteurs s'atèle à fournir un travail de qualité et professionnel.",
-    "about4":" Depuis tout ce temps nous proposons à notre clientèle divers services dont la partie pneumatique avec ses accessoires mais aussi depuis quelque temps nous proposons une partie mécanique avec les entretiens et préparation des véhicules pour le contrôle technique. Nous avons beaucoup de chance de pouvoir travailler avec une équipe efficace et professionnelle qui participe à des formations afin d'etre toujours compétant pour le travail à effectuer. Nous sommes très fier que cette société en soit à sa troisième génération au service de nos clients.",
-    "overons":"À propos de nous ..."
+    "about3":"Nous mettons un point d'honneur à répondre présent aux demandes de nos client. Cela commence par l'accueil , l'écoute ,le conseil et notre professionalisme envers le client.",
+    "about4":" Depuis quelques années, nous proposons à notre clientèle l'entretien et  la préparation de son véhicule pour le controle technique. ",
+    "overons":"À propos de nous ...",
+    "ou":"ou",
+    "Notre":"Notre",
+    "passion":"passion",
+    "avotre":"à votre",
+    "service":"service",
+    "depuis":"depuis",
+    "ans":"ans",
+    "sectionabout":"Notre garage est une affaire familiale qui a été transmise de génération en génération. Nous sommes spécialisés dans la vente de pneus et jantes, ainsi que dans l'entretien et la réparation de véhicules. Nous travaillons depuis 88 ans maintenant pour vous offrir un service de qualité, rapide et efficace.",
+    "adresse":"adresse",
+    "liens":"Liens utilesc"
+    
 
 
 

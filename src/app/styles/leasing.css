@@ -45,6 +45,7 @@ border-top: none;
 .partner:nth-child(4) {
 border-left: none;
 
+
 }
 .partner:nth-child(2) {
 
@@ -56,6 +57,11 @@ border-right: none;
 border-top: none;
 border-left: none;
 border-right: none;
+}
+.partner:nth-child(8) {
+
+border-top: none;
+border-left: none;
 }
 .leasing-title {
   color: #900a0a; /* Use site’s accent color */

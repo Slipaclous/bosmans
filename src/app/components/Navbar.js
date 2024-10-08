@@ -91,21 +91,12 @@ const Navbar = () => {
                 {t('jantes')}
               </Link>
             </li>
-        <li ref={entretiensRef} onClick={toggleEntretiensSubmenu}>
-          <span>{t('entretiens')}</span>
-          <ul className={`submenu ${entretiensSubmenuVisible ? 'visible' : ''}`}>
             <li>
               <Link href="/entretiens/controle_technique">
                 {t('controle technique')}
               </Link>
             </li>
-            <li>
-              <Link href="/entretiens/climatisation">
-                {t('climatisation')}
-              </Link>
-            </li>
-          </ul>
-        </li>
+        
         
         <li>
           <Link href="/leasing">

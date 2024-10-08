@@ -126,8 +126,8 @@ function HomePage() {
                 className="status-icon"
               />
               <p>
-                {t("question")} <a classname="tel" href="tel:+32475234567">02 396 11 84</a>.
-              </p>
+                {t("question")}</p> <a classname="tel" href="tel:+32475234567">02 396 11 84</a> {t("ou")} <a class="tel" href="tel">0486 20 404</a>
+              
             </div>
           </div>
         </div>
@@ -137,16 +137,13 @@ function HomePage() {
         >
           <div className="presentation-title">
 
-            <h2>Notre <span>passion</span> </h2>
-            <h2>À votre <span>service</span> </h2>
-            <h2>Depuis <span>88 ans</span> !</h2>
+            <h2>{t("Notre")} <span>{t("passion")}</span> </h2>
+            <h2>{t("avotre")} <span>{t("service")}</span> </h2>
+            <h2>{t("depuis")} <span>89 {t("ans")}</span> !</h2>
           </div>
           <div className="presentation-text">
             <p>
-              Notre garage est une affaire familiale qui a été transmise de
-              génération en génération. Nous sommes spécialisés dans la vente de
-              pneus et jantes, ainsi que dans l'entretien et la réparation de
-              véhicules. Nous travaillons depuis 88 ans maintenant pour vous offrir un service de qualité, rapide et efficace.
+              {t("sectionabout")}
             </p>
             <a className="button" href="/about">
               En savoir plus

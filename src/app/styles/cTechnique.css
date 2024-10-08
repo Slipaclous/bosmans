@@ -27,6 +27,7 @@ h2 {
 p {
     line-height: 1.6;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 .animated-section {
     opacity: 0;

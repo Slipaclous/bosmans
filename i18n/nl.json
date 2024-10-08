@@ -30,7 +30,7 @@
     "formulaire" :" dit formulier of telefonisch",
     "preparation":" Voorbereiding op de technische controle",
     "introduction":"Invoering",
-    "introduction-text":"Voordat u uw voertuig aan de technische controle onderwerpt, is een voorafgaand bezoek aan uw garage sterk aanbevolen. Dit maakt het mogelijk om eventuele problemen te identificeren en te corrigeren om een succesvolle doorgang te garanderen.",
+    "introduction-text":"We controleren de staat van de banden, de afstelling van de lichten, de remblokken en remschijven, evenals de schokdempers, en we voeren eventueel het kleine onderhoud van uw auto uit.",
     "points de controle":"Controlepunten",
     "controle-text":"We voeren een volledige controle uit van de controlepunten die vereist zijn tijdens de technische controle, waaronder remmen, lichten, uitlaatgasemissie en vele andere cruciale aspecten voor uw veiligheid en die van andere weggebruikers.",
     "importance":"Het belang van voorbereiding",
@@ -53,13 +53,31 @@
     "alcar-text" : "Alcar is een fabrikant van stalen en aluminium velgen. Het bedrijf is gevestigd in Duitsland en is een van de grootste velgenfabrikanten in Europa.",   
     "toutes-jantes" : "Alle velgen zijn alleen op bestelling verkrijgbaar",
     "atraxion-text" : "Atraxion is een merk van aluminium velgen. Het bedrijf is gevestigd in Frankrijk en biedt kwaliteitsvelgen tegen betaalbare prijzen.",
-    "banner" : "De zomer komt eraan! Vergeet niet om uw banden te laten vervangen.",
+    "banner" : "De winter komt eraan! Vergeet niet om uw banden te laten vervangen.",
     "cookie" : "We gebruiken cookies om uw ervaring op onze site te verbeteren. Door te accepteren, gaat u akkoord met ons gebruik van cookies",
     "accept" : "Ik accepteer cookies",
     "ferme" : "Gesloten",
     "about1":"De geschiedenis van ons bedrijf begint in 1935, toen Arthur Bosmans na een opleiding als vulkanisator bij Doyen in Brussel in de bandenbranche begon.",
-    "about2":"Na vijf jaar ondergedoken te zijn geweest tijdens de Tweede Wereldoorlog, begon hij zijn bandenbedrijf. Sindsdien zijn wij de derde generatie die dit bandenbedrijf exploiteert. Het beroep is sindsdien veel veranderd omdat de bandentechnologie gelukkig is geëvolueerd met de evolutie van nieuwe voertuigen.",
-    "about3":"Wij maken er een erezaak van om te reageren op de verzoeken van onze vele klanten. Het begint met het verwelkomen van de klant aan de balie. We luisteren zodat we ze het beste kunnen adviseren en verwijzen ze vervolgens door naar onze werkplaatsen waar ons team van monteurs werkt om kwaliteit en professioneel werk te leveren.",
-    "about4":"Al die tijd bieden wij onze klanten verschillende diensten aan, waaronder het pneumatische gedeelte met bijbehorende accessoires, maar ook al enige tijd bieden wij een mechanisch gedeelte aan met onderhoud en voorbereiding van voertuigen voor technische inspectie. Wij hebben het geluk te kunnen werken met een efficiënt en professioneel team dat deelneemt aan trainingen om altijd bekwaam te zijn voor het uit te voeren werk. Wij zijn erg trots dat dit bedrijf in de derde generatie onze klanten bedient.",
-    "overons":"Over ons ..."
+    "about2":"Na vijf jaar ondergedoken te hebben gezeten tijdens de Tweede Wereldoorlog, begon hij zijn bandenhandel. Sindsdien zijn wij de derde generatie die deze bandenhandel voortzetten. Het vak is sindsdien sterk veranderd, omdat de bandentechnologie gelukkig is geëvolueerd met de ontwikkeling van nieuwe voertuigen",
+    "about3":"Wij hechten veel waarde aan het beantwoorden van de vragen van onze klanten. Dit begint bij het ontvangst, het luisteren, het adviseren en onze professionaliteit tegenover de klant.",
+    "about4":"Sinds enkele jaren bieden wij onze klanten het onderhoud en de voorbereiding van hun voertuig voor de technische keuring aan..",
+    "overons":"Over ons ...",
+    "ou":"of",
+    "Notre" : "Onze",
+    "passion" : "passie",
+    "avotre" : "Tot uw",
+    "service" : "dienst",
+    "depuis" : "al",
+    "ans" :"jaar",
+    "sectionabout":"Onze garage is een familiebedrijf dat van generatie op generatie is doorgegeven. Wij zijn gespecialiseerd in de verkoop van banden en velgen, evenals in het onderhoud en de reparatie van voertuigen. Al 88 jaar werken wij om u een snelle, efficiënte en kwalitatieve service te bieden.",
+    "adresse":"adressen",
+    "liens":"handige links"
+
+
+
+
+
+
+
+
 }

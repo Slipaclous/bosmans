@@ -46,6 +46,12 @@ function Partenaires() {
       logo: "/images/leasing/vancia.webp",
       url: "https://www.vanciacarlease.com/fr",
     },
+    {
+      name: "J&T",
+      logo: "/images/leasing/jtauto.webp",
+      url: "https://www.jentautolease.be/fr",
+    },
+    
   ];
 
   return (

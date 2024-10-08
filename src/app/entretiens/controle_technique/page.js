@@ -33,20 +33,7 @@ function cTechnique() {
             <div className="container-ctechnique">
             <h1>{t("preparation")}</h1>
             <section className="animated-section">
-                    <h2>{t('introduction')}</h2>
                     <p>{t('introduction-text')}</p>
-                </section>
-                <section className="animated-section">
-                    <h2>{t("points de controle")}</h2>
-                    <p>{t("controle-text")}.</p>
-                </section>
-                <section className="animated-section">
-                    <h2>{t('importance')}</h2>
-                    <p>{t('importance-text')}</p>
-                </section>
-                <section className="animated-section">
-                    <h2>{t("nos services")}</h2>
-                    <p>{t('services-text')}</p>
                 </section>
             </div>
         </main>
