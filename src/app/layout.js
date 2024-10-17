@@ -13,6 +13,11 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+
+      <head>
+      <meta name="google-site-verification" content="aH4oIny6w09xBIz2s7VqTqdLYe_UrnhsAY2emvdYe9U" />
+      </head>
+      
       <body className={inter.className}>
         <Navbar />
         {children}
