@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import '../../styles/cTechnique.css'
 import { useTranslation } from 'react-i18next';
 import CookieConsent from '../../components/CookieConsent';
+import Head from 'next/head';
 
 function cTechnique() {
     const { t } = useTranslation();
@@ -28,7 +29,11 @@ function cTechnique() {
         };
       }, []);
     return (
-        <main>
+        <>
+        <Head>
+      <title>Entretien contrôle technique</title>
+      <meta name="description" content="Pourquoi faire votre entretien avant un controle technique ?" />
+    </Head>
             <CookieConsent/>
             <div className="container-ctechnique">
             <h1>{t("preparation")}</h1>
@@ -36,7 +41,7 @@ function cTechnique() {
                     <p>{t('introduction-text')}</p>
                 </section>
             </div>
-        </main>
+        </>
     );
 }
 

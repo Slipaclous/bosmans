@@ -7,12 +7,17 @@ import "../styles/about.css"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CookieConsent from '../components/CookieConsent';
 import { useTranslation } from 'react-i18next';
+import Head from 'next/head';
 
 
 export default function About() {
   const {t} = useTranslation();
   return (
-    <main>
+    <>
+    <Head>
+      <title>A propos</title>
+      <meta name="description" content="A propos de l'histoire de notre garage et comment est-il né." />
+    </Head>
       <CookieConsent />
       <h1 class="about-title">{t("overons")}</h1>
       <div className="about-text">
@@ -39,6 +44,6 @@ export default function About() {
         {/* Add more images as needed */}
       </Carousel>
         </div>
-    </main>
+    </>
   );
 }

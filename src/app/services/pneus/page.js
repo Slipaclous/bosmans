@@ -1,9 +1,12 @@
 "use client";
+
 import React from "react";
+import Image from "next/image"; // Import du composant Image
 import PartnerCard from "../../components/partner";
 import "../../styles/pneus.css";
 import { useTranslation } from "react-i18next";
 import CookieConsent from "../../components/CookieConsent";
+import Head from "next/head";
 
 function pneus() {
   const { t } = useTranslation();
@@ -18,7 +21,6 @@ function pneus() {
       logo: "/images/logos/goodyear.png",
       url: "https://www.goodyear.eu/fr_fr/consumer.html",
     },
-    
     {
       name: "Dunlop",
       logo: "/images/logos/dunlop.png",
@@ -52,32 +54,37 @@ function pneus() {
       url: "https://www.maxxis.com/ca/fr/a-propos/la-marque-maxxis/",
     },
   ];
+
   return (
-    <main>
+    <>
+      <Head>
+        <title>Pneus</title>
+        <meta name="description" content="Nos différents partenaires pneus toujours de qualité." />
+      </Head>
       <CookieConsent />
       <div className="tires-container">
-      <div className="partners">
-        <h2 className="partner-title">{t("Nos partenaires premium")}</h2>
-        <div className="partners-list premium">
-          {premiumPatners.map((partner, index) => (
-            <PartnerCard key={index} {...partner} isPremium={true} />
-          ))}
+        <div className="partners">
+          <h2 className="partner-title">{t("Nos partenaires premium")}</h2>
+          <div className="partners-list premium">
+            {premiumPatners.map((partner, index) => (
+              <PartnerCard key={index} {...partner} isPremium={true} />
+            ))}
+          </div>
+          <h2 className="partner-title">{t("Nos autres partenaires")}</h2>
+          <div className="partners-list">
+            {otherPartners.map((partner, index) => (
+              <PartnerCard key={index} {...partner} isPremium={false} />
+            ))}
+          </div>
         </div>
-        <h2 className="partner-title">{t("Nos autres partenaires")}</h2>
-        <div className="partners-list">
-          {otherPartners.map((partner, index) => (
-            <PartnerCard key={index} {...partner} isPremium={false} />
-          ))}
+        <div className="others-partners">
+          <h3>{t("Et bien d'autres encore")}</h3>
+          <p>
+            {t("egalement")} <a href="/contact">{t("formulaire")}</a>
+          </p>
         </div>
       </div>
-      <div className="others-partners">
-        <h3>{t("Et bien d'autres encore")}</h3>
-        <p>
-          {t("egalement")} <a href="/contact">{t("formulaire")}</a>
-        </p>
-      </div>
-      </div>
-    </main>
+    </>
   );
 }
 

@@ -8,6 +8,8 @@ import { useTranslation } from "react-i18next";
 import Banner from "./components/Banner";
 import Cookies from "js-cookie";
 import CookieConsent from "./components/CookieConsent";
+import Head from 'next/head';
+import Image from 'next/image'; // Ajout de l'importation pour next/image
 
 function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -85,15 +87,26 @@ function HomePage() {
   }, []);
 
   return (
-    <main>
+    <>
+      <Head>
+        <title>Accueil</title>
+        <meta name="description" content="Bienvenue sur le site du garage Bosmans à Enghien" />
+      </Head>
       <CookieConsent />
-       {showBanner && <Banner   closeBanner={closeBanner} hide={hideBanner} />}
+      {showBanner && <Banner closeBanner={closeBanner} hide={hideBanner} />}
       <div className="container">
         <div className="wall">
-          <img src="./images/logo-pneus.png" alt="" />
+          {/* Remplacement de <img> par le composant Image de Next.js */}
+          <Image
+            src="/images/logo-pneus.png" // Chemin vers ton image
+            alt="Logo des pneus"
+            width={600} // Ajuste la largeur de l'image
+            height={400} // Ajuste la hauteur de l'image
+            priority // Optionnel pour indiquer que c'est une image prioritaire
+          />
         </div>
         <div className="horaires-background">
-          <h3 class="horaire-title">{t("horaire")}</h3>
+          <h1 className="horaire-title">{t("horaire")}</h1>
           <div className="horaires-wrapper">
             <div className="schedule-list">
               {openingHours.map(({ day, hours }) => (
@@ -126,8 +139,7 @@ function HomePage() {
                 className="status-icon"
               />
               <p>
-                {t("question")}</p> <a classname="tel" href="tel:+32475234567">02 396 11 84</a> {t("ou")} <a class="tel" href="tel">0486 20 404</a>
-              
+                {t("question")}</p> <a classname="tel" href="tel:+32475234567">02 396 11 84</a> {t("ou")} <a className="tel" href="tel">0486 20 404</a>
             </div>
           </div>
         </div>
@@ -136,7 +148,6 @@ function HomePage() {
           className={`presentation ${isVisible ? "appear" : ""}`}
         >
           <div className="presentation-title">
-
             <h2>{t("Notre")} <span>{t("passion")}</span> </h2>
             <h2>{t("avotre")} <span>{t("service")}</span> </h2>
             <h2>{t("depuis")} <span>89 {t("ans")}</span> !</h2>
@@ -149,11 +160,9 @@ function HomePage() {
               En savoir plus
             </a>
           </div>
-          
         </div>
-
       </div>
-    </main>
+    </>
   );
 }
 

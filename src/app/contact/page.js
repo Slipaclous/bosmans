@@ -10,6 +10,7 @@ import BackToTopButton from "../components/BackToTopButton";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA  from "react-google-recaptcha-v3";
 import CookieConsent from "../components/CookieConsent";
+import Head from "next/head";
 
 function contact() {
   const [token, setToken] = useState(''); // Store the ReCAPTCHA token
@@ -53,7 +54,11 @@ function contact() {
   };
   return (
     
-    <main>
+    <>
+    <Head>
+      <title>Contact</title>
+      <meta name="description" content="Contactez-nous pour plus d'informations via notre formulaire ou par téléphone !" />
+    </Head>
       <CookieConsent />
       <div className="container-contact">
         <div className="contact-wrapper">
@@ -121,7 +126,7 @@ function contact() {
         </div>
 
       </div>
-    </main>
+    </>
   );
 }
 

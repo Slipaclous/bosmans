@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import '../../styles/climatisation.css'
 import { useTranslation } from 'react-i18next';
 import CookieConsent from '../../components/CookieConsent';
+import Head from 'next/head';
 
 function EntretienClimatisation() {
     const { t } = useTranslation();
@@ -28,7 +29,11 @@ function EntretienClimatisation() {
         };
       }, []);
     return (
-        <main>
+        <>
+        <Head>
+      <title>Climatisation</title>
+      <meta name="description" content="Qu'est ce que l'entretien de climatisation ? pourquoi le faire ?" />
+    </Head>
             <CookieConsent/>
             <div className="container-entretien-climatisation">
                 <h1>{t('climatisation-titre')}</h1>
@@ -49,7 +54,7 @@ function EntretienClimatisation() {
                     <p>{t('nos-text')}</p>
                 </section>
             </div>
-        </main>
+        </>
     );
 }
 

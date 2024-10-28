@@ -6,6 +6,7 @@ import BackToTopButton from "../components/BackToTopButton";
 import "../styles/leasing.css";
 import { useTranslation } from "react-i18next";
 import CookieConsent from "../components/CookieConsent";
+import Head from "next/head";
 
 function Partenaires() {
   const { t } = useTranslation();
@@ -55,7 +56,11 @@ function Partenaires() {
   ];
 
   return (
-    <main>
+    <>
+    <Head>
+      <title>Leasing</title>
+      <meta name="description" content="Nos différents partenaires leasing" />
+    </Head>
       <CookieConsent />
       <div className="container-leasing">
         {/* Dedicated section for the official partner */}
@@ -98,7 +103,7 @@ function Partenaires() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }
 export default Partenaires;

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.bosmansbandenpneus.com
+
+# Sitemaps
+Sitemap: https://www.bosmansbandenpneus.com/sitemap.xml

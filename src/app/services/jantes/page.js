@@ -4,12 +4,17 @@ import React from "react";
 import "../../styles/jantes.css";
 import { useTranslation } from "react-i18next";
 import CookieConsent from "../../components/CookieConsent";
+import Head from "next/head";
 
 function jantes() {
   const { t } = useTranslation();
 
   return (
-    <main>
+    <>
+    <Head>
+      <title>Jantes</title>
+      <meta name="description" content="Nos 2 collaborateurs pour des jantes qualitatives." />
+    </Head>
       <CookieConsent />
       <div className="jantes-container">
         <div className="marques">
@@ -42,7 +47,7 @@ function jantes() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }
 
