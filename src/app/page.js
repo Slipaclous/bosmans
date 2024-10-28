@@ -32,7 +32,7 @@ function HomePage() {
     const hasVisited = Cookies.get("hasVisited");
     if (!hasVisited) {
       setShowBanner(true);
-      Cookies.set("hasVisited", "true", { expires: 7 });
+      Cookies.set("hasVisited", "true", { expires:2 });
     }
   }, []);
 
