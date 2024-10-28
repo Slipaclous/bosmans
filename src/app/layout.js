@@ -4,7 +4,7 @@ import "./styles/globals.css";
 import { metadata } from "./metadata";
 import BackToTopButton from "./components/BackToTopButton";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/footer"
 
 const inter = Inter({ subsets: ["latin"] });
 
