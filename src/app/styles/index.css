@@ -6,13 +6,13 @@
 
 .wall{
     position: relative; /* Make .wall the positioning context for pseudo-elements */
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(118, 98, 98, 0.304);
+    background-color: rgba(59, 52, 52, 0.304);
 }
 
 .wall::before{
@@ -23,7 +23,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-   
+   background-image: url(../../../public/images/garage-back.png);
     background-position: center center;
     background-repeat: no-repeat;
     filter: brightness(0.3);
@@ -84,9 +84,6 @@
     font-weight: bold;
     width: 100%;
     color: white;
-}
-h2 span{
-    color: #900a0a;
 }
 .presentation-image{
     width: auto;
@@ -264,3 +261,126 @@ h2 span{
         align-items: center;
     }
 }
+/* Horaires Section */
+.horaires-background {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+.horaire-title {
+    font-size: 2rem;
+    color: #900a0a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.horaires-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.schedule-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.horaires {
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.current-status {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.status-icon {
+    color: #900a0a;
+    margin-bottom: 10px;
+}
+
+.current-status p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.tel {
+    font-size: 1rem;
+    color: #900a0a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tel:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .horaires-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.exceptional-closure {
+    background-color: #ffdddd;
+    color: #900a0a;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #900a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .closure-notice {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .exceptional-closure.active {
+    display: block;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+
+  .logo-presentation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+
+
+  

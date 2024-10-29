@@ -95,16 +95,22 @@ function HomePage() {
       <CookieConsent />
       {showBanner && <Banner closeBanner={closeBanner} hide={hideBanner} />}
       <div className="container">
-        <div className="wall">
-          {/* Remplacement de <img> par le composant Image de Next.js */}
-          <Image
-            src="/images/logo-pneus.png" // Chemin vers ton image
-            alt="Logo des pneus"
-            width={600} // Ajuste la largeur de l'image
-            height={400} // Ajuste la hauteur de l'image
-            priority // Optionnel pour indiquer que c'est une image prioritaire
-          />
-        </div>
+      <div className="wall">
+    <div className="logo-presentation">
+      <Image
+        src="/images/logo-pneus.png"
+        alt="Logo des pneus"
+        width={400} // Ajustez selon vos besoins
+        height={300} // Ajustez selon vos besoins
+        priority
+      />
+      <div className="presentation-text">
+        <h2>{t("Notre")} <span>{t("passion")}</span> {t("avotre")} {t("depuis")}  <span>{t("service")} <span>89 {t("ans")}</span> !</span>  </h2>
+        <p>{t("sectionabout")}</p>
+        <a className="button" href="/about">En savoir plus</a>
+      </div>
+    </div>
+  </div>
         <div className="horaires-background">
           <h1 className="horaire-title">{t("horaire")}</h1>
           <div className="horaires-wrapper">
@@ -140,27 +146,14 @@ function HomePage() {
               />
               <p>
                 {t("question")}</p> <a classname="tel" href="tel:+32475234567">02 396 11 84</a> {t("ou")} <a className="tel" href="tel">0486 20 404</a>
+            <div className="exceptional-closure" style={{ display: 'block' }}> {/* Mettre en display: 'block' en cas de fermeture exceptionnelle */}
+  <p className="closure-notice">⚠️ Fermeture exceptionnelle du 31/10/24 au 03/11/24.</p>
+</div>
             </div>
+
           </div>
         </div>
-        <div
-          ref={presentationRef}
-          className={`presentation ${isVisible ? "appear" : ""}`}
-        >
-          <div className="presentation-title">
-            <h2>{t("Notre")} <span>{t("passion")}</span> </h2>
-            <h2>{t("avotre")} <span>{t("service")}</span> </h2>
-            <h2>{t("depuis")} <span>89 {t("ans")}</span> !</h2>
-          </div>
-          <div className="presentation-text">
-            <p>
-              {t("sectionabout")}
-            </p>
-            <a className="button" href="/about">
-              En savoir plus
-            </a>
-          </div>
-        </div>
+       
       </div>
     </>
   );
