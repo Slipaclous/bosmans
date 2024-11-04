@@ -145,7 +145,7 @@ function HomePage() {
                 className="status-icon"
               />
               <p>
-                {t("question")}</p> <a classname="tel" href="tel:+32475234567">02 396 11 84</a> {t("ou")} <a className="tel" href="tel">0486 20 404</a>
+                {t("question")}</p> <a classname="tel" href="tel:+3223961184">02 396 11 84</a> {t("ou")} <a className="tel" href="tel:+3248620404">0486 20 404</a>
             {/* <div className="exceptional-closure" style={{ display: 'block' }}> 
   <p className="closure-notice">⚠️ Fermeture exceptionnelle du 31/10/24 au 03/11/24.</p>
 </div> */}
