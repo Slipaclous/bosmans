@@ -139,3 +139,11 @@
         width: 50%;
     }
 }
+.jantes-title {
+   position: absolute;
+   color: white;
+   z-index: 555;
+   top: 15%;
+   font-size: 2rem;
+   text-transform: uppercase;
+}

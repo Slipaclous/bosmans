@@ -17,7 +17,10 @@ function jantes() {
     </Head>
       <CookieConsent />
       <div className="jantes-container">
+       
+        
         <div className="marques">
+          <h1 className="jantes-title">{t("jantes-title")}</h1>
           
           <div className="marque atraxion">
             <img src="/images/jantes/atraxion.png" alt="audi" />

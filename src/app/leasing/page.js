@@ -65,7 +65,7 @@ function Partenaires() {
       <div className="container-leasing">
         {/* Dedicated section for the official partner */}
         <div className="official-partner">
-          <h2 className="leasing-title">{t("partenaire-o")}</h2>
+          <h1 className="leasing-title">{t("partenaire-o")}</h1>
           <div className="partner-official">
             <img src="/images/leasing/lease-plan.png" alt="Lease-plan" />
             <div className="partner-info">

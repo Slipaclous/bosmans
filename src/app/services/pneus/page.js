@@ -64,7 +64,7 @@ function pneus() {
       <CookieConsent />
       <div className="tires-container">
         <div className="partners">
-          <h2 className="partner-title">{t("Nos partenaires premium")}</h2>
+          <h1 className="partner-title">{t("Nos partenaires premium")}</h1>
           <div className="partners-list premium">
             {premiumPatners.map((partner, index) => (
               <PartnerCard key={index} {...partner} isPremium={true} />

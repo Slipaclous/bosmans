@@ -77,7 +77,7 @@ function contact() {
             </div>
           </div>
             <div className="contact-form">
-                <h2>{t('contactez-nous')}</h2>
+                <h1>{t('contactez-nous')}</h1>
                 <form onSubmit={handleOnSubmit} method="POST">
                 <input
             type="text"
