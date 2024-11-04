@@ -17,8 +17,6 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <title>Bosmans Pneus - Votre garage de pneus</title>
-        <meta name="description" content="Découvrez Bosmans Pneus, votre garage spécialisé dans les pneus de qualité." />
       </head>
       <body className={inter.className}>
         <Navbar />
