@@ -83,7 +83,7 @@ const Footer = () => {
       <div className="footer-credits">
         <a href=""> Mentions légales</a>
         <p className="dots"> - </p>
-        <p> Site réalisé par G-Minor </p>
+        <p> Site réalisé par<a href="https://gminor.dev"> G-Minor</a>  </p>
         <p className="dots"> - </p>
         <p> Bosmans pneus  &copy; 2024 </p>
         </div>
