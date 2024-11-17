@@ -89,6 +89,28 @@ function HomePage() {
   return (
     <>
       <Head>
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Garage Bosmans",
+  "description": "Garage Bosmans à Enghien - Spécialiste en réparation, entretien et pneus.",
+  "image": "../public/images/favicon.ico",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Edingsesteenweg 67",
+    "addressLocality": "Herne",
+    "addressRegion": "Wallonie",
+    "postalCode": "1540",
+    "addressCountry": "BE"
+  },
+  "telephone": "+3223961184",
+  "url": "https://bosmansbandenpneus.com"
+}}
+/>
+
         <title>Garage Bosmans - Hernes</title>
         <meta name="description" content="Garage  Bosmans Hernes" />
       </Head>
