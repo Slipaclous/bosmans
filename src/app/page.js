@@ -89,8 +89,8 @@ function HomePage() {
   return (
     <>
       <Head>
-        <title>Accueil</title>
-        <meta name="description" content="Bienvenue sur le site du garage Bosmans à Enghien" />
+        <title>Garage Bosmans - Hernes</title>
+        <meta name="description" content="Garage  Bosmans Hernes" />
       </Head>
       <CookieConsent />
       {showBanner && <Banner closeBanner={closeBanner} hide={hideBanner} />}
@@ -99,7 +99,7 @@ function HomePage() {
     <div className="logo-presentation">
       <Image
         src="/images/logo-pneus.png"
-        alt="Logo des pneus"
+        alt="Garage Bosmans - Logo"
         width={400} // Ajustez selon vos besoins
         height={300} // Ajustez selon vos besoins
         priority
