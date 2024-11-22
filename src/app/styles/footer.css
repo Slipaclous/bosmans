@@ -13,13 +13,16 @@ footer {
     min-height: 50vh;
     gap: 100px;
 }
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .footer-images{
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 75px;
 }
 .logo-bosmans{
     width: 150px;
@@ -43,6 +46,9 @@ footer {
 }
 .adresse{
     margin: 25px 0px;
+}
+.schedule-liste :nth-child(1){
+    padding: 0px;
 }
 .horaire{
     padding: 6px 0px;
@@ -83,7 +89,7 @@ footer {
     color: #bd0d0d;
 }
 .footer-infos,.footer-horaire,.footer-links{
-    min-height: 37vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     
@@ -106,13 +112,14 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+    
     .footer-links{
         gap: 20px;
         margin-bottom: 20px !important;
     }
     .footer-images{
         display: flex;
-        flex-direction: row;
+        flex-direction: column !important;
         justify-content: center;
         align-items: center;
         gap: 20px;

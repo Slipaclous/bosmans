@@ -12,6 +12,7 @@ nav{
 
 nav ul{
     display: flex;
+    align-items: center;
     list-style: none;
     width: 50%;
     gap: 45px;
@@ -19,7 +20,7 @@ nav ul{
 }
 
 .titre-site{
-    width: 15vw;
+    width: 8vw;
     font-weight: bold;
 }
 nav ul li a{
@@ -129,7 +130,7 @@ nav ul > li span::after {
         left: 93%;
     }
 }
-@media(max-width:1600px){
+@media(max-width:1887px){
 
 
     nav h2{
@@ -144,6 +145,19 @@ nav ul > li span::after {
     nav ul{
         width: 75%;
         justify-content: center;
+    }
+}
+
+@media(max-width:1253px){
+    nav ul li a{
+        font-size: 0.8rem;
+        
+    }
+    nav ul {
+        width: 85%;
+    }
+    nav ul li a {
+        width: 100%;
     }
 }
 /* Hide navigation links and buttons initially in mobile view */
