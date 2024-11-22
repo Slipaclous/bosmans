@@ -129,7 +129,7 @@ function HomePage() {
       <div className="presentation-text">
         <h2>{t("Notre")} <span>{t("passion")}</span> {t("avotre")} <span>{t("service")}</span> {t("depuis")}   <span>89 {t("ans")} !</span>  </h2>
         <p>{t("sectionabout")}</p>
-        <a className="button" href="/about">En savoir plus</a>
+        <a className="button" href="/about">{t('plus')}</a>
       </div>
     </div>
   </div>
